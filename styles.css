@@ -2,10 +2,133 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: teal;
   background-color: pink;
+  font-family: "Shadows Into Light", cursive;
+}
+.container {
+  width: 80%;
+  margin: 3rem auto;
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+.container h1 {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid teal;
+  text-align: center;
+  width: 90%;
 }
 .container a {
   text-decoration: none;
   color: purple;
+  font-family: helvetica;
   display: block;
+  letter-spacing: normal;
+  transition: all ease-in 1s;
+}
+.container a:hover {
+  color: teal;
+  opacity: 0.7;
+}
+.tooltip > span {
+  visibility: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 5rem;
+  width: 5rem;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  z-index: 1;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-accordion {
+  background-image: url("images/accordion.png");
+}
+.accordion:hover .tooltip-accordion {
+  visibility: visible;
+}
+.tooltip-fourCards {
+  background-image: url("images/four-cards.png");
+}
+.fourCards:hover .tooltip-fourCards {
+  visibility: visible;
+}
+.tooltip-chatApp {
+  background-image: url("images/chat-app.png");
+}
+.chatApp:hover .tooltip-chatApp {
+  visibility: visible;
+}
+.tooltip-rangeSlider {
+  background-image: url("images/range-slider.png");
+}
+.rangeSlider:hover .tooltip-rangeSlider {
+  visibility: visible;
+}
+.tooltip-easyBank {
+  background-image: url("images/easybank.png");
+}
+.easyBank:hover .tooltip-easyBank {
+  visibility: visible;
+}
+.tooltip-pricingComponent {
+  background-image: url("images/pricing-component.png");
+}
+.pricingComponent:hover .tooltip-pricingComponent {
+  visibility: visible;
+}
+.tooltip-signUpForm {
+  background-image: url("images/sign-up-form.png");
+}
+.signUpForm:hover .tooltip-signUpForm {
+  visibility: visible;
+}
+.tooltip-manageLandingPage {
+  background-image: url("images/manageLandingPage.png");
+}
+.manageLandingPage:hover .tooltip-manageLandingPage {
+  visibility: visible;
+}
+.tooltip-fyloDataStorage {
+  background-image: url("images/fylo-data-storage.png");
+}
+.fyloDataStorage:hover .tooltip-fyloDataStorage {
+  visibility: visible;
+}
+.tooltip-profileCard {
+  background-image: url("images/profile-card.png");
+}
+.profileCard:hover .tooltip-profileCard {
+  visibility: visible;
+}
+.tooltip-huddle {
+  background-image: url("images/huddle.png");
+}
+.huddle:hover .tooltip-huddle {
+  visibility: visible;
+}
+.tooltip-articlePreview {
+  background-image: url("images/article-preview.png");
+}
+.articlePreview:hover .tooltip-articlePreview {
+  visibility: visible;
+}
+.tooltip-singlePrice {
+  background-image: url("images/single-price.png");
+}
+.singlePrice:hover .tooltip-singlePrice {
+  visibility: visible;
+}
+@media (min-width: 700px) {
+  .tooltip > span {
+    height: 15rem;
+    width: 20rem;
+    left: 40%;
+  }
 }
