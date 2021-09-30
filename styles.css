@@ -137,6 +137,12 @@ body {
 .jobListings:hover .tooltip-jobListings {
   visibility: visible;
 }
+.tooltip-blogrLandingPage {
+  background-image: url("images/blogrLandingPage.png");
+}
+.blogrLandingPage:hover .tooltip-blogrLandingPage {
+  visibility: visible;
+}
 
 @media (min-width: 700px) {
   .tooltip > span {
