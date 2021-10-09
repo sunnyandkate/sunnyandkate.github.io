@@ -143,6 +143,18 @@ body {
 .blogrLandingPage:hover .tooltip-blogrLandingPage {
   visibility: visible;
 }
+.tooltip-sunnyside {
+  background-image: url("images/sunnyside.png");
+}
+.sunnyside:hover .tooltip-sunnyside {
+  visibility: visible;
+}
+.tooltip-tip-calculator {
+  background-image: url("images/tip-calculator.png");
+}
+.tip-calculator:hover .tooltip-tip-calculator {
+  visibility: visible;
+}
 
 @media (min-width: 700px) {
   .tooltip > span {
