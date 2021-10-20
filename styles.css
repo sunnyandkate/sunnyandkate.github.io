@@ -155,6 +155,12 @@ body {
 .tip-calculator:hover .tooltip-tip-calculator {
   visibility: visible;
 }
+.tooltip-productPage {
+  background-image: url("images/product-page.png");
+}
+.productPage:hover .tooltip-productPage {
+  visibility: visible;
+}
 
 @media (min-width: 700px) {
   .tooltip > span {
