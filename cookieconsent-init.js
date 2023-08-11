@@ -10,7 +10,7 @@
 // obtain cookieconsent plugin
 var cc = initCookieConsent();
 
-
+var logo = '';
 var cookie = 'ðŸª';
 
 // run plugin with config object
