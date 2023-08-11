@@ -1,7 +1,8 @@
 /*
-
-cookie consent banner by: https://github.com/orestbida/cookieconsent
-
+* CookieConsent v2.9.2
+ * https://www.github.com/orestbida/cookieconsent
+ * Author Orest Bida
+ * Released under the MIT License
 
 */
 
@@ -10,7 +11,7 @@ cookie consent banner by: https://github.com/orestbida/cookieconsent
 var cc = initCookieConsent();
 
 
-var cookie = '🍪';
+var cookie = 'ðŸª';
 
 // run plugin with config object
 cc.run({
@@ -35,7 +36,7 @@ cc.run({
     gui_options: {
         consent_modal: {
             layout: 'box',                      // box,cloud,bar
-            position: 'bottom right',           // bottom,middle,top + left,right,center
+            position: 'bottom left',           // bottom,middle,top + left,right,center
             transition: 'slide'                 // zoom,slide
         },
         settings_modal: {
@@ -85,8 +86,8 @@ cc.run({
                 ],
                 blocks: [
                     {
-                        title: 'Cookie usage 📢',
-                        description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="https://sunnyandkate.com/privacypolicy.php" class="cc-link">privacy policy</a>.'
+                        title: 'Cookie usage ',
+                        description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="https://sunnyandkate.github.io/privacyPolicy/" class="cc-link">privacy policy</a>.'
                     }, {
                         title: 'Strictly necessary cookies',
                         description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
@@ -128,7 +129,7 @@ cc.run({
                         }
                     }, {
                         title: 'More information',
-                        description: 'For any queries in relation to my policy on cookies and your choices, please <a class="cc-link" href="https://sunnyandkate.com/contact.php">contact me</a>.',
+                        description: 'For any queries in relation to my policy on cookies and your choices, please contact me.',
                     }
                 ]
             }
