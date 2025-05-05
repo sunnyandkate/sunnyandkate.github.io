@@ -11,7 +11,7 @@
 var cc = initCookieConsent();
 
 var logo = '';
-var cookie = 'ðŸª';
+var cookie = '';
 
 // run plugin with config object
 cc.run({
