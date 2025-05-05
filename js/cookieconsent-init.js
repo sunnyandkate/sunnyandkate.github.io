@@ -61,7 +61,7 @@ cc.run({
     languages: {
         'en': {
             consent_modal: {
-                title: cookie + ' We use cookies! ',
+                title:  ' We use cookies! ',
                 description: 'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
                 primary_btn: {
                     text: 'Accept all',
