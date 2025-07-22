@@ -8,7 +8,7 @@ body{
     margin:0;
     box-sizing: border-box;
     overflow: scroll;
-    background-color: #faffcc;
+    background-color: #EFE2BA;
     
 }
 ::-webkit-scrollbar{
@@ -44,7 +44,7 @@ body{
    
 }
 .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img, .sunnyBDayBtn img, .palmtreeguyBtn img,
-.cloudGameBtn img, .threeDGameBtn img, .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
+.cloudGameBtn img, .threeDGameBtn img, .yogaCatBtn img, .islandOfSecretsBtn img, .wizardCatBtn img,  .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
     width: 100px; 
     height: auto;
 
@@ -120,7 +120,7 @@ body{
     font-size:1rem;
     margin-top: 0;
     padding-top: 3rem;
-    padding-left:2rem;
+    padding-left:7rem;
     color:beige;
     z-index: 999;
 }
@@ -181,15 +181,12 @@ body{
     box-shadow:2px 2px 2px rgb(40, 82, 41);
     text-decoration: none;
     z-index: 999;
+   
   
 }
-.startBtn:hover{
-    color:rgb(231, 233, 164);
-    background-color:rgb(40, 82, 41);
-    border: 2px solid rgb(231, 233, 164);
-    box-shadow:2px 2px 2px rgb(231, 233, 164);
+.startBtn:visited{
+    color: rgb(40, 82, 41);
 }
-
 .players{
     display: flex;
     flex-direction: row;   
@@ -291,9 +288,6 @@ body{
 }
 .java-list li a:hover{
     color:#a06e57;
-}
-.java-sublist li{
-    list-style-type:circle;
 }
 /*error page*/
 .error-message{
@@ -434,13 +428,17 @@ footer a{
 }
 .cc-color-override--167202574 .cc-btn{
     color:#4a6743 !important;
-    font-family:'Mali', 'Helvetica';
+    font-family:'Helvetica';
 }
 .cc-window{
     border-top:2px solid #aec295;
 }
 
-
+@media(orientation: landscape){
+    .connect-icons{
+        margin-bottom:0;
+    }
+}
 @media(min-width: 600px){
     footer{
         flex-direction: row;
@@ -449,18 +447,14 @@ footer a{
     }
    
 }
-@media(orientation: landscape){
-    .connect-icons{
-        margin-bottom:0;
-    }
-}
+
 
 
 @media(min-width:700px){
     .startBtn{
         font-size: 1rem;
         font-weight: bold;
-        padding:1rem 4rem;
+        padding: 1rem 4rem;
     }
 
 }
@@ -505,7 +499,6 @@ footer a{
     }
     .welcome{
         font-size:2rem;
-        padding-left: 6rem;
     }
     .header-img{
         height: 30rem;
@@ -516,7 +509,7 @@ footer a{
         min-height: 900px;  
     }
     .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img, .sunnyBDayBtn img, .palmtreeguyBtn img,
-     .cloudGameBtn img, .threeDGameBtn img, .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
+     .cloudGameBtn img, .threeDGameBtn img, .yogaCatBtn img, .islandOfSecretsBtn img,  .wizardCatBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
         width: 200px;
         height: auto;
     }
