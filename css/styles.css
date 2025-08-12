@@ -106,7 +106,7 @@ body{
     z-index: 99;
 }
 .npcSpeechBubble h2{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Pixelfont', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     font-weight: 200;
     text-transform: uppercase;   
@@ -117,7 +117,7 @@ body{
     padding: 0;
 }
 .npcSpeechBubble ul li{
-    font-family:'Papyrus', Comic Sans, Tahoma, sans-serif;
+    font-family:'Pixelfont', Comic Sans, Tahoma, sans-serif;
     font-size:1rem;
 }
 .welcome{
@@ -215,7 +215,7 @@ body{
     align-items: center;  
 }
 .contact-container{
-    font-family: Arial;
+    font-family: Pixelfont;
     font-size: 1rem;
 }
 .about-container{
@@ -434,11 +434,11 @@ footer a{
     color:#d6d099;
 }
 .cc-link{
-    font-family:'Mali', 'Helvetica';
+    font-family:'Pixelfont', 'Helvetica';
 }
 .cc-color-override--167202574 .cc-btn{
     color:#4a6743 !important;
-    font-family:'Mali', 'Helvetica';
+    font-family:'Pixelfont', 'Helvetica';
 }
 .cc-window{
     border-top:2px solid #aec295;

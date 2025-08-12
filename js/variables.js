@@ -100,18 +100,18 @@ function queryFunction(x){
         npc = new DisplayObjects("npcOne", "80px", "100px", "25px", "25px", "absolute");
         textAdvBtn = new DisplayObjects("textAdventure", "150px", "130px", "100px", "100px", "absolute");
         about = new DisplayObjects("about", "300px", "300px", "100px", "100px", "absolute");
-        games = new DisplayObjects("games", "300px", "200px", "100px", "100px", "absolute");
+        games = new DisplayObjects("games", "210px", "300px", "100px", "100px", "absolute");
         contact = new DisplayObjects("contact", "200px", "250px", "100px", "100px", "absolute");
         sunnyBDay = new DisplayObjects("sunnyBDay", "100px", "300px", "100px", "100px", "absolute");
         palmtreeguy = new DisplayObjects("palmtreeguy", "200px", "400px", "100px", "100px", "absolute");
-        javaProjects = new DisplayObjects("java projects", "250px", "130px", "100px", "100px", "absolute");
+        javaProjects = new DisplayObjects("java projects", "200px", "50px", "100px", "100px", "absolute");
        // playerIdle.style.width = player.width;
        // playerIdle.style.height = player.height;
     }else{
         npc = new DisplayObjects("npcOne", "500px", "500px", "50px", "50px", "absolute");
         textAdvBtn = new DisplayObjects("textAdventure", "200px", "100px", "200px", "150px", "absolute");
         about = new DisplayObjects("about", "300px", "500px", "200px", "150px", "absolute");
-        games = new DisplayObjects("games", "1000px", "0px", "200px", "150px", "absolute");
+        games = new DisplayObjects("games", "1100px", "0px", "200px", "150px", "absolute");
         contact = new DisplayObjects("contact", "800px", "500px", "200px", "150px", "absolute");
         sunnyBDay = new DisplayObjects("sunnyBDay", "700px", "300px", "200px", "150px", "absolute");
         palmtreeguy = new DisplayObjects("palmtreeguy", "600px", "600px", "200px", "150px", "absolute");
