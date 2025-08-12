@@ -25,12 +25,12 @@ function collisionDetection(){
    
     //check collision with any objects
     objectsCollision(player, textAdvBtn, "TextAdventure");
-    objectsCollision(player, about, "about.php");
+    objectsCollision(player, about, "about.html");
     objectsCollision(player, games, "games.html");
-    objectsCollision(player, contact, "contact.php");
+    objectsCollision(player, contact, "contact.html");
     objectsCollision(player, sunnyBDay, "SunnysWishlist");
     objectsCollision(player, palmtreeguy, "PalmtreeguyAdventure");
-    objectsCollision(player, javaProjects, "javaProjects.php");
+    objectsCollision(player, javaProjects, "javaProjects.html");
     objectsCollision(player, npc, "#", true);
 }
 
