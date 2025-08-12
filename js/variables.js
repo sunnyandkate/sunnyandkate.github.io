@@ -49,7 +49,7 @@ var textAdventure = document.querySelector(".btnTextAdv");
 var aboutBtn = document.querySelector(".aboutBtn");
 var gamesBtn = document.querySelector(".gamesBtn");
 var contactBtn = document.querySelector(".contactBtn");
-var sunnyBDayBtn = document.querySelector(".sunnyBDayBtn");
+//var sunnyBDayBtn = document.querySelector(".sunnyBDayBtn");
 var palmtreeguyBtn = document.querySelector(".palmtreeguyBtn");
 var javaBtn = document.querySelector(".javaBtn");
 var npcOne = document.querySelector(".npc");
@@ -69,7 +69,7 @@ var textAdvBtn;
 var about;
 var games;
 var contact;
-var sunnyBDay;
+//var sunnyBDay;
 var palmtreeguy;
 var javaProjects;
 var npc;
@@ -102,7 +102,7 @@ function queryFunction(x){
         about = new DisplayObjects("about", "300px", "300px", "100px", "100px", "absolute");
         games = new DisplayObjects("games", "210px", "300px", "100px", "100px", "absolute");
         contact = new DisplayObjects("contact", "200px", "250px", "100px", "100px", "absolute");
-        sunnyBDay = new DisplayObjects("sunnyBDay", "100px", "300px", "100px", "100px", "absolute");
+      //  sunnyBDay = new DisplayObjects("sunnyBDay", "100px", "300px", "100px", "100px", "absolute");
         palmtreeguy = new DisplayObjects("palmtreeguy", "200px", "400px", "100px", "100px", "absolute");
         javaProjects = new DisplayObjects("java projects", "200px", "50px", "100px", "100px", "absolute");
        // playerIdle.style.width = player.width;
@@ -113,7 +113,7 @@ function queryFunction(x){
         about = new DisplayObjects("about", "300px", "500px", "200px", "150px", "absolute");
         games = new DisplayObjects("games", "1100px", "0px", "200px", "150px", "absolute");
         contact = new DisplayObjects("contact", "800px", "500px", "200px", "150px", "absolute");
-        sunnyBDay = new DisplayObjects("sunnyBDay", "700px", "300px", "200px", "150px", "absolute");
+      //  sunnyBDay = new DisplayObjects("sunnyBDay", "700px", "300px", "200px", "150px", "absolute");
         palmtreeguy = new DisplayObjects("palmtreeguy", "600px", "600px", "200px", "150px", "absolute");
         javaProjects = new DisplayObjects("java projects", "500px", "250px", "200px", "150px", "absolute");
       //  playerIdle.style.width = player.width * 2;
@@ -166,11 +166,6 @@ function setObjectsPositions(){
     contactBtn.style.width = contact.width;
     contactBtn.style.height = contact.height;
   
-    sunnyBDayBtn.style.position = sunnyBDay.position;
-    sunnyBDayBtn.style.top = sunnyBDay.y;
-    sunnyBDayBtn.style.left = sunnyBDay.x;
-    sunnyBDayBtn.style.width = sunnyBDay.width;
-    sunnyBDayBtn.style.height = sunnyBDay.height;
 
     palmtreeguyBtn.style.position = palmtreeguy.position;
     palmtreeguyBtn.style.top = palmtreeguy.y;
