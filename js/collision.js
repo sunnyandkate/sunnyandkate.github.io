@@ -28,7 +28,7 @@ function collisionDetection(){
     objectsCollision(player, about, "about.html");
     objectsCollision(player, games, "games.html");
     objectsCollision(player, contact, "contact.html");
-    objectsCollision(player, sunnyBDay, "SunnysWishlist");
+   
     objectsCollision(player, palmtreeguy, "PalmtreeguyAdventure");
     objectsCollision(player, javaProjects, "javaProjects.html");
     objectsCollision(player, npc, "#", true);

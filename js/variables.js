@@ -105,8 +105,7 @@ function queryFunction(x){
       //  sunnyBDay = new DisplayObjects("sunnyBDay", "100px", "300px", "100px", "100px", "absolute");
         palmtreeguy = new DisplayObjects("palmtreeguy", "200px", "400px", "100px", "100px", "absolute");
         javaProjects = new DisplayObjects("java projects", "50px", "200px", "100px", "100px", "absolute");
-       // playerIdle.style.width = player.width;
-       // playerIdle.style.height = player.height;
+     
     }else{
         npc = new DisplayObjects("npcOne", "500px", "500px", "50px", "50px", "absolute");
         textAdvBtn = new DisplayObjects("textAdventure", "200px", "100px", "200px", "150px", "absolute");
@@ -116,10 +115,7 @@ function queryFunction(x){
       //  sunnyBDay = new DisplayObjects("sunnyBDay", "700px", "300px", "200px", "150px", "absolute");
         palmtreeguy = new DisplayObjects("palmtreeguy", "600px", "600px", "200px", "150px", "absolute");
         javaProjects = new DisplayObjects("java projects", "500px", "250px", "200px", "150px", "absolute");
-      //  playerIdle.style.width = player.width * 2;
-       // playerIdle.style.height = player.height * 2;
-      // playerIdle.style.width = "50px";
-     //  playerIdle.style.height = "50px";
+     
     
     }
     
@@ -166,13 +162,6 @@ function setObjectsPositions(){
     contactBtn.style.width = contact.width;
     contactBtn.style.height = contact.height;
   
-
-    palmtreeguyBtn.style.position = palmtreeguy.position;
-    palmtreeguyBtn.style.top = palmtreeguy.y;
-    palmtreeguyBtn.style.left = palmtreeguy.x;
-    palmtreeguyBtn.style.width = palmtreeguy.width;
-    palmtreeguyBtn.style.height = palmtreeguy.height;
-
     javaBtn.style.position = javaProjects.position;
     javaBtn.style.top = javaProjects.y;
     javaBtn.style.left = javaProjects.x;
