@@ -111,7 +111,7 @@ function queryFunction(x){
         npc = new DisplayObjects("npcOne", "500px", "500px", "50px", "50px", "absolute");
         textAdvBtn = new DisplayObjects("textAdventure", "200px", "100px", "200px", "150px", "absolute");
         about = new DisplayObjects("about", "300px", "500px", "200px", "150px", "absolute");
-        games = new DisplayObjects("games", "1100px", "0px", "200px", "150px", "absolute");
+        games = new DisplayObjects("games", "800px", "200px", "200px", "150px", "absolute");
         contact = new DisplayObjects("contact", "800px", "500px", "200px", "150px", "absolute");
       //  sunnyBDay = new DisplayObjects("sunnyBDay", "700px", "300px", "200px", "150px", "absolute");
         palmtreeguy = new DisplayObjects("palmtreeguy", "600px", "600px", "200px", "150px", "absolute");
