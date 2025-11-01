@@ -53,7 +53,7 @@ var platformerBtn = document.querySelector(".platformerBtn");
 var slidePuzzleBtn = document.querySelector(".slidePuzzleBtn");
 var catDetectiveBtn = document.querySelector(".catDetectiveBtn");
 var catDetectiveBtnLink = document.querySelector(".catDetectiveBtnLink");
-var threeDGameBtn = document.querySelector(".threeDGameBtn");
+
 var yogaCatBtn = document.querySelector(".yogaCatBtn");
 var islandOfSecretsBtn = document.querySelector(".islandOfSecretsBtn");
 
@@ -74,7 +74,7 @@ var jumpingCat;
 var platformer;
 var slidePuzzle;
 var catDetective;
-var threeDGame;
+
 var yogaCatAdventure;
 var islandOfSecrets;
 
@@ -88,7 +88,7 @@ function queryFunction(x){
         slidePuzzle = new DisplayObjects("slidePuzzle", "150px", "150px", "100px", "100px", "absolute");
         catDetective = new DisplayObjects("catDetective", "50px", "150px", "100px", "100px", "absolute");
         catDetectiveBtnLink.setAttribute("href", "games/CatDetectiveMobileGame.apk");
-         threeDGame = new DisplayObjects("threeDGame", "310px", "150px", "100px", "100px", "absolute");
+       
         yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "20px", "400px", "100px", "100px", "absolute");
         islandOfSecrets = new DisplayObjects("islandOfSecrets", "220px", "220px", "100px", "100px", "absolute");
 
@@ -98,7 +98,7 @@ function queryFunction(x){
         jumpingCat = new DisplayObjects("jumpingCat", "700px", "80px", "50px", "20px", "absolute");
         platformer = new DisplayObjects("platformer", "100px", "400px", "50px", "20px", "absolute");
         slidePuzzle = new DisplayObjects("slidePuzzle", "300px", "500px", "50px", "20px", "absolute"); 
-         threeDGame = new DisplayObjects("threeDGame", "750px", "400px", "200px", "150px", "absolute");  
+         
         yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "960px", "540px", "200px", "150px", "absolute");
         islandOfSecrets = new DisplayObjects("islandOfSecrets", "1200px", "620px", "200px", "150px", "absolute"); 
         catDetective = new DisplayObjects("catDetective", "500px", "150px", "50px", "20px", "absolute");
@@ -153,11 +153,7 @@ function setObjectsPositions(){
     catDetectiveBtn.style.width = catDetective.width;
     catDetectiveBtn.style.height = catDetective.height;
 
-     threeDGameBtn.style.position = threeDGame.position;
-    threeDGameBtn.style.top = threeDGame.y;
-    threeDGameBtn.style.left = threeDGame.x;
-    threeDGameBtn.style.width = threeDGame.width;
-    threeDGameBtn.style.height = threeDGame.height;
+  
     
     yogaCatBtn.style.position = yogaCatAdventure.position;
     yogaCatBtn.style.top = yogaCatAdventure.y;
