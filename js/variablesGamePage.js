@@ -101,7 +101,7 @@ function queryFunction(x){
          
         yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "960px", "540px", "200px", "150px", "absolute");
         islandOfSecrets = new DisplayObjects("islandOfSecrets", "1200px", "620px", "200px", "150px", "absolute"); 
-        catDetective = new DisplayObjects("catDetective", "500px", "150px", "50px", "20px", "absolute");
+        catDetective = new DisplayObjects("catDetective", "800px", "300px", "50px", "20px", "absolute");
        // playerIdle.style.width = player.width * 2;
         //playerIdle.style.height = player.height * 2;
         catDetectiveBtnLink.setAttribute("href", "games/CatDetective/index.html");
