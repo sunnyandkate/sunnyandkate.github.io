@@ -102,10 +102,10 @@ function queryFunction(x){
      
     }else{
         npc = new DisplayObjects("npcOne", "500px", "500px", "50px", "50px", "absolute");
-          about = new DisplayObjects("about", "300px", "500px", "200px", "150px", "absolute");
+        about = new DisplayObjects("about", "300px", "500px", "200px", "150px", "absolute");
         games = new DisplayObjects("games", "800px", "200px", "200px", "150px", "absolute");
         contact = new DisplayObjects("contact", "800px", "500px", "200px", "150px", "absolute");
-         javaProjects = new DisplayObjects("java projects", "500px", "250px", "200px", "150px", "absolute");
+        javaProjects = new DisplayObjects("java projects", "500px", "250px", "200px", "150px", "absolute");
      
     
     }
