@@ -24,7 +24,8 @@ function collisionGameDetection(x){
   
    
     //check collision with any objects
-   
+    objectsCollision(player, islandOfSecrets, "games/IslandOfSecrets/index.html");
+    objectsCollision(player, yogaCatAdventure, "games/YogaCatAdventure/index.html");
     objectsCollision(player, cloudGame, "games/JumpingClouds.apk");
     objectsCollision(player, coinCollector, "games/CoinCollector.apk");
     objectsCollision(player, jumpingCat, "games/JumpingCat.apk");
@@ -59,15 +60,8 @@ function objectsCollision(player, object, page){
         && playerPositionY > objectY){
             
            
-           
-           // confirmToDownload();
-          window.location.href = page;
-            console.log(confirmToDownload());
-            /* if(confirmToDownload() === true){
-                window.location.href = page;
-            } else{
-                window.location.href = "games.html";
-            } */
+            confirmToDownload();
+            window.location.href = page;
         
     }
    
@@ -76,11 +70,11 @@ function objectsCollision(player, object, page){
 
 //confirm downloading the game
 function confirmToDownload(event){
-    if(confirm('Do you want to download the game?')){
+    if(confirm('Do you want to download the game for your mobile or for big screens get redirected to another page to play the game?')){
         return true;
     }else{
-        window.location.href = "games.html";
+        //if download is canceled, return to current page beginning
+        window.location.href = "games.php";
         event.preventDefault();
-        
     }
 }

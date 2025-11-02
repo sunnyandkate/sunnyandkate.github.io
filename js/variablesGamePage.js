@@ -95,15 +95,15 @@ function queryFunction(x){
 
     }else{
         textAdventure = new DisplayObjects("textAdventure", "200px", "100px", "200px", "150px", "absolute");    
-        cloudGame = new DisplayObjects("cloudGame", "800px", "600px", "50px", "50px", "absolute");
-        coinCollector = new DisplayObjects("coinCollector", "500px", "400px", "50px", "20px", "absolute");
-        jumpingCat = new DisplayObjects("jumpingCat", "700px", "80px", "50px", "20px", "absolute");
+        cloudGame = new DisplayObjects("cloudGame", "800px", "600px", "200px", "150px", "absolute");
+        coinCollector = new DisplayObjects("coinCollector", "500px", "400px", "200px", "150px", "absolute");
+        jumpingCat = new DisplayObjects("jumpingCat", "700px", "80px", "200px", "150px", "absolute");
         platformer = new DisplayObjects("platformer", "100px", "400px", "200px", "150px", "absolute");
-        slidePuzzle = new DisplayObjects("slidePuzzle", "300px", "500px", "50px", "20px", "absolute"); 
+        slidePuzzle = new DisplayObjects("slidePuzzle", "300px", "500px", "200px", "150px", "absolute"); 
          
         yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "960px", "540px", "200px", "150px", "absolute");
         islandOfSecrets = new DisplayObjects("islandOfSecrets", "1200px", "620px", "200px", "150px", "absolute"); 
-        catDetective = new DisplayObjects("catDetective", "800px", "300px", "50px", "20px", "absolute");
+        catDetective = new DisplayObjects("catDetective", "800px", "300px", "200px", "150px", "absolute");
        // playerIdle.style.width = player.width * 2;
         //playerIdle.style.height = player.height * 2;
         catDetectiveBtnLink.setAttribute("href", "games/CatDetective/index.html");

@@ -98,7 +98,7 @@ function queryFunction(x){
         about = new DisplayObjects("about", "300px", "300px", "100px", "100px", "absolute");
         games = new DisplayObjects("games", "300px", "210px", "100px", "100px", "absolute");
         contact = new DisplayObjects("contact", "200px", "250px", "100px", "100px", "absolute");
-         javaProjects = new DisplayObjects("java projects", "50px", "200px", "100px", "100px", "absolute");
+        javaProjects = new DisplayObjects("java projects", "50px", "200px", "100px", "100px", "absolute");
      
     }else{
         npc = new DisplayObjects("npcOne", "500px", "500px", "50px", "50px", "absolute");
