@@ -12,15 +12,15 @@ body{
     margin:0;
     box-sizing: border-box;
     overflow: scroll;
-    background-color: #faffcc;
+    background-color: #fffcb3;
     
 }
 ::-webkit-scrollbar{
-    background-color:#EFE2BA;
+    background-color:#fffcb3;
    
 }
 ::-webkit-scrollbar-thumb{
-    background-color:#aec295;
+    background-color:#707b51;
 }
 
 /*Sunnyandkate.html*/
@@ -47,8 +47,8 @@ body{
     left: 0;
    
 }
-.btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img, .sunnyBDayBtn img, .palmtreeguyBtn img,
-.cloudGameBtn img, .threeDGameBtn img, .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
+.btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img,  
+.cloudGameBtn img, .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
     width: 100px; 
     height: auto;
 
@@ -57,17 +57,6 @@ body{
     width: 80px;
     height: auto;
 }
-/*
-.aboutBtn{
-    font-family: "Sunnysfont";
-    font-size: 0.8rem;
-    color: rgb(40, 82, 41);
-    padding:1rem 4rem;
-    background-color:rgb(231, 233, 164);
-    border: 2px solid rgb(40, 82, 41);
-    border-radius: 0.5rem;
-    box-shadow:2px 2px 2px rgb(40, 82, 41);
-}*/
 
 
 .player{
@@ -93,11 +82,11 @@ body{
 }
 .npcSpeechBubble{
     display: none;
-    color:rgb(40, 82, 41);
-    background-color: rgb(255, 254, 185);
-    border: .5rem solid rgb(9, 71, 22);
+    color: #707b51;
+    background-color: #fffcb3;
+    border: .5rem solid #707b51;
     border-radius: .5rem;
-    box-shadow: 2px 2px 12px rgb(122, 177, 134);
+    box-shadow: 2px 2px 12px #707b51;
     padding: 1rem 1.5rem;
     margin: 0;
     position: absolute;
@@ -144,7 +133,7 @@ body{
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(40, 82, 41, 0.328);
+   
    
 }
 .overlay{
@@ -155,7 +144,7 @@ body{
     right:0;
     width: 100%;
     height: 100%;
-    background-color: #4a674366;
+    background-color: rgba(112, 123, 81, 0.328);
    
 }
 #title{
@@ -177,21 +166,21 @@ body{
 .startBtn{
     font-family: "Pixelfont";
     font-size: 0.8rem;
-    color: rgb(40, 82, 41);
+    color: #707b51;
     padding: 0.5rem 1rem;
-    background-color:rgb(231, 233, 164);
-    border: 2px solid rgb(40, 82, 41);
+    background-color:#fffcb3;
+    border: 2px solid #707b51;
     border-radius: 0.5rem;
-    box-shadow:2px 2px 2px rgb(40, 82, 41);
+    box-shadow:2px 2px 2px #707b51;
     text-decoration: none;
     z-index: 999;
   
 }
 .startBtn:hover{
-    color:rgb(231, 233, 164);
-    background-color:rgb(40, 82, 41);
-    border: 2px solid rgb(231, 233, 164);
-    box-shadow:2px 2px 2px rgb(231, 233, 164);
+    color: #fffcb3;
+    background-color: #707b51;
+    border: 2px solid #fffcb3;
+    box-shadow:2px 2px 2px #fffcb3;
 }
 
 .players{
@@ -203,8 +192,8 @@ body{
 }
 /*about page*/
 .about-container, .contact-container{      
-    color:#557064;
-    background-color:rgb(255, 254, 185);
+    color:#707b51;
+    background-color:#fffcb3;
     background-image: url("../images/TitleImg.png");
     background-position-y: 60%;   
     min-height:100vh;
@@ -251,29 +240,29 @@ body{
     margin-top: 2rem;
 }
 .about-container .btn, .contact-container .btn{
-    border: .2rem solid #4a6743;
+    border: .2rem solid #707b51;
     border-radius: .5rem;
     padding: .5rem;
-    box-shadow: 2px 2px 2px #4a6743;
+    box-shadow: 2px 2px 2px #707b51;
     margin-bottom:1rem;
     text-align: center;
     width: 50%;
 }
 .about-container .btn:hover, .contact-container .btn:hover{
-    color:#dadaa3;
-    background-color: #4a6743;
+    color:#fffcb3;
+    background-color: #707b51;
 }
 .about-container .btn a, .contact-container .btn a{
     text-decoration: none;
-    color:#4a6743;
+    color:#707b51;
 }
 .about-container .btn:hover a, .contact-container .btn:hover a{
-    color:#dadaa3;
+    color:#fffcb3;
 }
 /*contact*/
 .contactInfo{
     text-transform: lowercase;
-    color:#4a6743;
+    color:#707b51;
     text-decoration: none;
 }
 /*java projects*/
@@ -291,10 +280,10 @@ body{
 }
 .java-list li a{
     text-decoration: none;
-    color:#4a6743;
+    color:#707b51;
 }
 .java-list li a:hover{
-    color:#a06e57;
+    color:#3e2e28;
 }
 .java-sublist li{
     list-style-type:circle;
@@ -304,8 +293,8 @@ body{
     text-align:center;
 }
 .error-message p{
-    color:#dadaa3;
-    text-shadow:2px 2px 2px #4a6743;
+    color:#fffcb3;
+    text-shadow:2px 2px 2px #707b51;
     font-size:1.5rem;
     text-transform:uppercase;
     margin-top:3rem;
@@ -317,14 +306,14 @@ body{
 }
 .privacyPolicy, .legal{
     font-family: Arial, Helvetica, sans-serif;
-    color:#4a6743;
+    color:#707b51;
     margin:4rem auto; 
     width:90%;
 }
 .privacyPolicy p, .privacyPolicy h2, .privacyPolicy h3, .privacyPolicy h4, .privacyPolicy h5,
  .privacyPolicy ul li,
  .legal h2, .legal p{
-    color:#4a6743;
+    color:#707b51;
 }
 .privacyPolicy h2{
     margin-top:2.5rem;
@@ -333,14 +322,14 @@ body{
     margin:0 auto;
 }
 .privacyPolicy a, .legal a{
-    color:#795548;
+    color:#3e2e28;
     font-size:.8rem;
     word-break:break-all;
 }
 /*navigation*/
 .nav-container{
-    background-color:#496742;
-    box-shadow:2px 2px 2px #768d58;
+    background-color:#707b51;
+    box-shadow:2px 2px 2px #383e28;
     transition:all ease .5s;
     z-index:2;
    
@@ -350,7 +339,7 @@ body{
     margin-top:0;
 }
 .logo{
-    color:#dadaa3;
+    color:#fffcb3;
     font-size:2rem;
     font-variant:small-caps;
     font-family:'Pixelfont', sans-serif;
@@ -383,18 +372,18 @@ nav ul li{
     padding:.5rem;
 }
 nav ul li:hover{   
-    background-color:#EFE2BA;
+    background-color:#fffcb3;
     border-radius:5px;
     padding:.5rem;
 }
 nav ul li a{
-    color:#EFE2BA;
+    color:#fffcb3;
     font-size:1rem;
     padding:.5rem;
     text-decoration: none;
 }
 nav ul li:hover a{
-    color:#496742;
+    color:#707b51;
 }
 
 /*footer*/
@@ -402,8 +391,8 @@ nav ul li:hover a{
 footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size:1rem;
-    color:#557064;
-    background-color: #faffcc;
+    color:#707b51;
+    background-color: #fffcb3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -414,7 +403,7 @@ footer{
 }
 
 footer a{
-    color:#557064;
+    color:#707b51;
     text-decoration: none;
 }
 .footer-games{
@@ -431,17 +420,17 @@ footer a{
 }
 
 .cc-message{
-    color:#d6d099;
+    color:#fffcb3;
 }
 .cc-link{
     font-family:'Pixelfont', 'Helvetica';
 }
 .cc-color-override--167202574 .cc-btn{
-    color:#4a6743 !important;
+    color:#707b51 !important;
     font-family:'Pixelfont', 'Helvetica';
 }
 .cc-window{
-    border-top:2px solid #aec295;
+    border-top:2px solid #707b51;
 }
 
 
@@ -519,8 +508,8 @@ footer a{
         min-width: 75rem;  
         min-height: 900px;  
     }
-    .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img, .sunnyBDayBtn img, .palmtreeguyBtn img,
-     .cloudGameBtn img, .threeDGameBtn img, .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
+    .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img, 
+     .cloudGameBtn img,  .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
         width: 200px;
         height: auto;
     }

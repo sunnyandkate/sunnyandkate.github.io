@@ -45,12 +45,10 @@ function setupPlayer(x){
 }
 
 //objects on the screen
-var textAdventure = document.querySelector(".btnTextAdv");
+
 var aboutBtn = document.querySelector(".aboutBtn");
 var gamesBtn = document.querySelector(".gamesBtn");
 var contactBtn = document.querySelector(".contactBtn");
-//var sunnyBDayBtn = document.querySelector(".sunnyBDayBtn");
-var palmtreeguyBtn = document.querySelector(".palmtreeguyBtn");
 var javaBtn = document.querySelector(".javaBtn");
 var npcOne = document.querySelector(".npc");
 
@@ -65,12 +63,11 @@ function DisplayObjects(name, x, y, width, height, position){
 }
 
 
-var textAdvBtn;
+
 var about;
 var games;
 var contact;
-//var sunnyBDay;
-var palmtreeguy;
+
 var javaProjects;
 var npc;
 var npcSpeechBubble = document.querySelector(".npcSpeechBubble");
@@ -98,23 +95,17 @@ function checkSpeechBubble(){
 function queryFunction(x){
     if(x.matches){
         npc = new DisplayObjects("npcOne", "80px", "100px", "25px", "25px", "absolute");
-        textAdvBtn = new DisplayObjects("textAdventure", "150px", "130px", "100px", "100px", "absolute");
         about = new DisplayObjects("about", "300px", "300px", "100px", "100px", "absolute");
         games = new DisplayObjects("games", "300px", "210px", "100px", "100px", "absolute");
         contact = new DisplayObjects("contact", "200px", "250px", "100px", "100px", "absolute");
-      //  sunnyBDay = new DisplayObjects("sunnyBDay", "100px", "300px", "100px", "100px", "absolute");
-        palmtreeguy = new DisplayObjects("palmtreeguy", "200px", "400px", "100px", "100px", "absolute");
-        javaProjects = new DisplayObjects("java projects", "50px", "200px", "100px", "100px", "absolute");
+         javaProjects = new DisplayObjects("java projects", "50px", "200px", "100px", "100px", "absolute");
      
     }else{
         npc = new DisplayObjects("npcOne", "500px", "500px", "50px", "50px", "absolute");
-        textAdvBtn = new DisplayObjects("textAdventure", "200px", "100px", "200px", "150px", "absolute");
-        about = new DisplayObjects("about", "300px", "500px", "200px", "150px", "absolute");
+          about = new DisplayObjects("about", "300px", "500px", "200px", "150px", "absolute");
         games = new DisplayObjects("games", "800px", "200px", "200px", "150px", "absolute");
         contact = new DisplayObjects("contact", "800px", "500px", "200px", "150px", "absolute");
-      //  sunnyBDay = new DisplayObjects("sunnyBDay", "700px", "300px", "200px", "150px", "absolute");
-        palmtreeguy = new DisplayObjects("palmtreeguy", "600px", "600px", "200px", "150px", "absolute");
-        javaProjects = new DisplayObjects("java projects", "500px", "250px", "200px", "150px", "absolute");
+         javaProjects = new DisplayObjects("java projects", "500px", "250px", "200px", "150px", "absolute");
      
     
     }
@@ -131,15 +122,7 @@ function setObjectsPositions(){
     npcOne.style.width = npc.width;
     npcOne.style.height = npc.height;
     
-    //var textAdvBtn = new DisplayObjects("textAdventure", "200px", "200px", "50px", "20px", "absolute");
-    textAdventure.style.position = textAdvBtn.position;
-    textAdventure.style.top = textAdvBtn.y;
-    textAdventure.style.left = textAdvBtn.x;
-    textAdventure.style.width = textAdvBtn.width;
-    textAdventure.style.height = textAdvBtn.height;
-    
-    //about = new DisplayObjects("about", "300px", "500px", "50px", "20px", "absolute");
-    
+   
     aboutBtn.style.position = about.position;
     aboutBtn.style.top = about.y;
     aboutBtn.style.left = about.x;

@@ -24,12 +24,11 @@ function collisionDetection(){
   
    
     //check collision with any objects
-    objectsCollision(player, textAdvBtn, "TextAdventure");
+    
     objectsCollision(player, about, "about.html");
     objectsCollision(player, games, "games.html");
     objectsCollision(player, contact, "contact.html");
    
-    objectsCollision(player, palmtreeguy, "PalmtreeguyAdventure");
     objectsCollision(player, javaProjects, "javaProjects.html");
     objectsCollision(player, npc, "#", true);
 }

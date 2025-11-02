@@ -36,7 +36,7 @@ function collisionGameDetection(x){
     }
     
     objectsCollision(player, slidePuzzle, "games/SlidePuzzle/index.html");
-    
+    objectsCollision(player, textAdvBtn, "TextAdventure");
 }
 
 function objectsCollision(player, object, page){
