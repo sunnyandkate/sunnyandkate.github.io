@@ -81,16 +81,16 @@ var islandOfSecrets;
 
 function queryFunction(x){
     if(x.matches){
-        textAdventure = new DisplayObjects("textAdventure", "150px", "130px", "100px", "100px", "absolute");      
-        cloudGame = new DisplayObjects("cloudGame", "200px", "400px", "100px", "100px", "absolute");
+        textAdventure = new DisplayObjects("textAdventure", "300px", "130px", "100px", "100px", "absolute");      
+        cloudGame = new DisplayObjects("cloudGame", "200px", "340px", "100px", "100px", "absolute");
         coinCollector = new DisplayObjects("coinCollector", "300px", "300px", "100px", "100px", "absolute");
         jumpingCat = new DisplayObjects("jumpingCat", "200px", "80px", "100px", "100px", "absolute");
-        platformer = new DisplayObjects("platformer", "100px", "300px", "100px", "100px", "absolute");
+        platformer = new DisplayObjects("platformer", "80px", "300px", "100px", "100px", "absolute");
         slidePuzzle = new DisplayObjects("slidePuzzle", "150px", "150px", "100px", "100px", "absolute");
         catDetective = new DisplayObjects("catDetective", "50px", "150px", "100px", "100px", "absolute");
         catDetectiveBtnLink.setAttribute("href", "games/CatDetectiveMobileGame.apk");
        
-        yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "20px", "400px", "100px", "100px", "absolute");
+        yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "20px", "220px", "100px", "100px", "absolute");
         islandOfSecrets = new DisplayObjects("islandOfSecrets", "220px", "220px", "100px", "100px", "absolute");
 
     }else{
@@ -99,7 +99,7 @@ function queryFunction(x){
         coinCollector = new DisplayObjects("coinCollector", "500px", "400px", "200px", "150px", "absolute");
         jumpingCat = new DisplayObjects("jumpingCat", "700px", "80px", "200px", "150px", "absolute");
         platformer = new DisplayObjects("platformer", "100px", "400px", "200px", "150px", "absolute");
-        slidePuzzle = new DisplayObjects("slidePuzzle", "300px", "500px", "200px", "150px", "absolute"); 
+        slidePuzzle = new DisplayObjects("slidePuzzle", "280px", "600px", "200px", "150px", "absolute"); 
          
         yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "960px", "540px", "200px", "150px", "absolute");
         islandOfSecrets = new DisplayObjects("islandOfSecrets", "1200px", "620px", "200px", "150px", "absolute"); 

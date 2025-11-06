@@ -95,17 +95,17 @@ function checkSpeechBubble(){
 function queryFunction(x){
     if(x.matches){
         npc = new DisplayObjects("npcOne", "80px", "100px", "25px", "25px", "absolute");
-        about = new DisplayObjects("about", "300px", "300px", "100px", "100px", "absolute");
-        games = new DisplayObjects("games", "300px", "210px", "100px", "100px", "absolute");
+        about = new DisplayObjects("about", "260px", "100px", "100px", "100px", "absolute");
+        games = new DisplayObjects("games", "200px", "100px", "100px", "100px", "absolute");
         contact = new DisplayObjects("contact", "200px", "250px", "100px", "100px", "absolute");
-        javaProjects = new DisplayObjects("java projects", "50px", "200px", "100px", "100px", "absolute");
+        javaProjects = new DisplayObjects("java projects", "40px", "200px", "100px", "100px", "absolute");
      
     }else{
         npc = new DisplayObjects("npcOne", "500px", "500px", "50px", "50px", "absolute");
-        about = new DisplayObjects("about", "300px", "500px", "200px", "150px", "absolute");
+        about = new DisplayObjects("about", "200px", "400px", "200px", "150px", "absolute");
         games = new DisplayObjects("games", "800px", "200px", "200px", "150px", "absolute");
         contact = new DisplayObjects("contact", "800px", "500px", "200px", "150px", "absolute");
-        javaProjects = new DisplayObjects("java projects", "500px", "250px", "200px", "150px", "absolute");
+        javaProjects = new DisplayObjects("java projects", "450px", "100px", "200px", "150px", "absolute");
      
     
     }
