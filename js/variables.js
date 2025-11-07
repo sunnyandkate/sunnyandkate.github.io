@@ -95,7 +95,7 @@ function checkSpeechBubble(){
 function queryFunction(x){
     if(x.matches){
         npc = new DisplayObjects("npcOne", "80px", "100px", "25px", "25px", "absolute");
-        about = new DisplayObjects("about", "260px", "100px", "100px", "100px", "absolute");
+        about = new DisplayObjects("about", "260px", "320px", "100px", "100px", "absolute");
         games = new DisplayObjects("games", "200px", "100px", "100px", "100px", "absolute");
         contact = new DisplayObjects("contact", "200px", "250px", "100px", "100px", "absolute");
         javaProjects = new DisplayObjects("java projects", "40px", "200px", "100px", "100px", "absolute");
