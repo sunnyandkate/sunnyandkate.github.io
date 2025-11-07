@@ -196,8 +196,8 @@ body{
     background-color:#fffcb3;
     background-image: url("../images/TitleImg.png");
     background-position-y: 60%;   
-    min-height:100vh;
-    padding-top: 15rem;
+  
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -478,6 +478,10 @@ footer a{
        
         background-size:100% 100%;
         padding: 6rem;   
+    }
+    .about-container, .contact-container{
+        padding-top: 15rem;
+        min-height: 100vh;
     }
     .about-container .btn-row, .contact-container .btn-row{
         flex-direction: row;

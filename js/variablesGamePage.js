@@ -81,9 +81,9 @@ var islandOfSecrets;
 
 function queryFunction(x){
     if(x.matches){
-        textAdventure = new DisplayObjects("textAdventure", "300px", "130px", "100px", "100px", "absolute");      
+        textAdventure = new DisplayObjects("textAdventure", "280px", "130px", "100px", "100px", "absolute");      
         cloudGame = new DisplayObjects("cloudGame", "200px", "340px", "100px", "100px", "absolute");
-        coinCollector = new DisplayObjects("coinCollector", "300px", "300px", "100px", "100px", "absolute");
+        coinCollector = new DisplayObjects("coinCollector", "260px", "290px", "100px", "100px", "absolute");
         jumpingCat = new DisplayObjects("jumpingCat", "200px", "80px", "100px", "100px", "absolute");
         platformer = new DisplayObjects("platformer", "80px", "300px", "100px", "100px", "absolute");
         slidePuzzle = new DisplayObjects("slidePuzzle", "150px", "150px", "100px", "100px", "absolute");
