@@ -25,7 +25,7 @@ function collisionGameDetection(x){
    
     //check collision with any objects
     objectsCollision(player, islandOfSecrets, "games/IslandOfSecrets/index.html");
-    objectsCollision(player, yogaCatAdventure, "games/YogaCatAdventure/index.html");
+    objectsCollision(player, yogaCatAdventure, "games/YogaCatAdventureGame/index.html");
    /*  
     objectsCollision(player, cloudGame, "games/JumpingClouds.apk");
     objectsCollision(player, coinCollector, "games/CoinCollector.apk");
@@ -39,7 +39,7 @@ function collisionGameDetection(x){
     }
     
     objectsCollision(player, slidePuzzle, "games/SlidePuzzle/index.html");
-    objectsCollision(player, textAdvBtn, "games/TextAdventure");
+    objectsCollision(player, textAdventure, "games/TextAdventure");
 }
 
 function objectsCollision(player, object, page){
