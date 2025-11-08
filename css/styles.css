@@ -202,7 +202,7 @@ body{
     background-color:#fffcb3;
     background-image: url("../images/TitleImg.png");
     background-position-y: 60%;   
-  
+    background-repeat: no-repeat;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -215,6 +215,7 @@ body{
     font-size:1rem;
     text-transform: uppercase;   
 }
+
 .about-content{
     background-image: url("../images/aboutpage-bg.png");
     background-repeat: no-repeat;
@@ -249,7 +250,13 @@ body{
     box-shadow: 2px 2px 2px #707b51;
     margin-bottom:1rem;
     text-align: center;
-    width: 70%;
+}
+.about-container .btn{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.contact-container .btn{
+    width: 60%;
 }
 .about-container .btn:hover, .contact-container .btn:hover{
     color:#fffcb3;
@@ -258,6 +265,9 @@ body{
 .about-container .btn a, .contact-container .btn a{
     text-decoration: none;
     color:#707b51;
+}
+.contact-container .btn a{
+    text-transform: lowercase;
 }
 .about-container .btn:hover a, .contact-container .btn:hover a{
     color:#fffcb3;
