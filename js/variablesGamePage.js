@@ -45,11 +45,13 @@ function setupPlayer(x){
 }
 
 //objects on the screen
-var textAdvBtn = document.querySelector(".btnTextAdv");
+/* 
 var cloudGameBtn = document.querySelector(".cloudGameBtn");
 var coinCollectorBtn = document.querySelector(".coinCollectorBtn");
 var jumpingCatBtn = document.querySelector(".jumpingCatBtn");
-var platformerBtn = document.querySelector(".platformerBtn");
+var platformerBtn = document.querySelector(".platformerBtn"); */
+
+var textAdvBtn = document.querySelector(".btnTextAdv");
 var slidePuzzleBtn = document.querySelector(".slidePuzzleBtn");
 var catDetectiveBtn = document.querySelector(".catDetectiveBtn");
 var catDetectiveBtnLink = document.querySelector(".catDetectiveBtnLink");
@@ -67,11 +69,13 @@ function DisplayObjects(name, x, y, width, height, position){
     this.position = position;
 }
 
-var textAdventure;
+/* 
 var cloudGame;
 var coinCollector;
 var jumpingCat;
-var platformer;
+var platformer; */
+
+var textAdventure;
 var slidePuzzle;
 var catDetective;
 
@@ -82,10 +86,11 @@ var islandOfSecrets;
 function queryFunction(x){
     if(x.matches){
         textAdventure = new DisplayObjects("textAdventure", "280px", "130px", "100px", "100px", "absolute");      
-        cloudGame = new DisplayObjects("cloudGame", "200px", "340px", "100px", "100px", "absolute");
+     /*    cloudGame = new DisplayObjects("cloudGame", "200px", "340px", "100px", "100px", "absolute");
         coinCollector = new DisplayObjects("coinCollector", "260px", "290px", "100px", "100px", "absolute");
         jumpingCat = new DisplayObjects("jumpingCat", "200px", "80px", "100px", "100px", "absolute");
         platformer = new DisplayObjects("platformer", "80px", "300px", "100px", "100px", "absolute");
+       */
         slidePuzzle = new DisplayObjects("slidePuzzle", "150px", "150px", "100px", "100px", "absolute");
         catDetective = new DisplayObjects("catDetective", "50px", "150px", "100px", "100px", "absolute");
         catDetectiveBtnLink.setAttribute("href", "games/CatDetectiveMobileGame.apk");
@@ -95,10 +100,11 @@ function queryFunction(x){
 
     }else{
         textAdventure = new DisplayObjects("textAdventure", "200px", "100px", "200px", "150px", "absolute");    
-        cloudGame = new DisplayObjects("cloudGame", "800px", "600px", "200px", "150px", "absolute");
+       /*  cloudGame = new DisplayObjects("cloudGame", "800px", "600px", "200px", "150px", "absolute");
         coinCollector = new DisplayObjects("coinCollector", "500px", "400px", "200px", "150px", "absolute");
         jumpingCat = new DisplayObjects("jumpingCat", "700px", "80px", "200px", "150px", "absolute");
         platformer = new DisplayObjects("platformer", "100px", "400px", "200px", "150px", "absolute");
+        */
         slidePuzzle = new DisplayObjects("slidePuzzle", "280px", "600px", "200px", "150px", "absolute"); 
          
         yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "960px", "540px", "200px", "150px", "absolute");

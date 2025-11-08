@@ -47,11 +47,17 @@ body{
     left: 0;
    
 }
-.btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img,  
-.cloudGameBtn img, .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
+
+/* 
+.cloudGameBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img{
     width: 100px; 
     height: auto;
+} */
 
+.btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img,  
+ .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .slidePuzzleBtn img{
+    width: 100px; 
+    height: auto;
 }
 .javaBtn img{
     width: 60px;
@@ -512,8 +518,15 @@ footer a{
         min-width: 75rem;  
         min-height: 900px;  
     }
+
+    /* 
+     .cloudGameBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img{
+        width: 200px;
+        height: auto;
+    } */
+
     .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img, 
-     .cloudGameBtn img,  .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img, .slidePuzzleBtn img{
+      .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .slidePuzzleBtn img{
         width: 200px;
         height: auto;
     }
