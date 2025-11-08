@@ -74,7 +74,7 @@ function confirmToDownload(event){
         return true;
     }else{
         //if download is canceled, return to current page beginning
-        window.location.href = "games.php";
+        window.location.href = "games.html";
         event.preventDefault();
     }
 }

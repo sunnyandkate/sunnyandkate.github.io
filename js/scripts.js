@@ -9,7 +9,7 @@ function startGame(){
     setupInput();
     setObjectsPositions();
     collisionDetection();
-   // collisionGameDetection(x);
+    collisionGameDetection(x);
       
 }
 

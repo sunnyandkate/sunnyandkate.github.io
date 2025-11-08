@@ -37,7 +37,7 @@ function setupPlayer(x){
         playerIdle.style.height = player.height;
     }else{
         playerIdle.style.width = player.width * (2 + "px");
-    playerIdle.style.height = player.height * (2 + "px");
+        playerIdle.style.height = player.height * (2 + "px");
     } 
    // playerIdle.style.width = player.width;
     //playerIdle.style.height = player.height;
@@ -104,8 +104,7 @@ function queryFunction(x){
         yogaCatAdventure = new DisplayObjects("yogaCatAdventure", "960px", "540px", "200px", "150px", "absolute");
         islandOfSecrets = new DisplayObjects("islandOfSecrets", "1200px", "620px", "200px", "150px", "absolute"); 
         catDetective = new DisplayObjects("catDetective", "800px", "300px", "200px", "150px", "absolute");
-       // playerIdle.style.width = player.width * 2;
-        //playerIdle.style.height = player.height * 2;
+       
         catDetectiveBtnLink.setAttribute("href", "games/CatDetective/index.html");
     }
     
@@ -118,25 +117,20 @@ function setObjectsPositions(){
     textAdvBtn.style.left = textAdventure.x;
     textAdvBtn.style.width = textAdventure.width;
     textAdvBtn.style.height = textAdventure.height;
-   
-   // cloudGame = new DisplayObjects("cloudGame", "800px", "600px", "50px", "50px", "absolute");
-    
+   /*  
     cloudGameBtn.style.position = cloudGame.position;
     cloudGameBtn.style.top = cloudGame.y;
     cloudGameBtn.style.left = cloudGame.x;
     cloudGameBtn.style.width = cloudGame.width;
     cloudGameBtn.style.height = cloudGame.height;
 
-    //coinCollector = new DisplayObjects("coinCollector", "500px", "400px", "50px", "20px", "absolute");
     
     coinCollectorBtn.style.position = coinCollector.position;
     coinCollectorBtn.style.top = coinCollector.y;
     coinCollectorBtn.style.left = coinCollector.x;
     coinCollectorBtn.style.width = coinCollector.width;
     coinCollectorBtn.style.height = coinCollector.height;
-
-    //jumpingCat = new DisplayObjects("jumpingCat", "700px", "80px", "50px", "20px", "absolute");
-    
+ 
     jumpingCatBtn.style.position = jumpingCat.position;
     jumpingCatBtn.style.top = jumpingCat.y;
     jumpingCatBtn.style.left = jumpingCat.x;
@@ -147,7 +141,7 @@ function setObjectsPositions(){
     platformerBtn.style.top = platformer.y;
     platformerBtn.style.left = platformer.x;
     platformerBtn.style.width = platformer.width;
-    platformerBtn.style.height = platformer.height;
+    platformerBtn.style.height = platformer.height; */
 
     slidePuzzleBtn.style.position = slidePuzzle.position;
     slidePuzzleBtn.style.top = slidePuzzle.y;
@@ -160,9 +154,7 @@ function setObjectsPositions(){
     catDetectiveBtn.style.left = catDetective.x;
     catDetectiveBtn.style.width = catDetective.width;
     catDetectiveBtn.style.height = catDetective.height;
-
-  
-    
+   
     yogaCatBtn.style.position = yogaCatAdventure.position;
     yogaCatBtn.style.top = yogaCatAdventure.y;
     yogaCatBtn.style.left = yogaCatAdventure.x;

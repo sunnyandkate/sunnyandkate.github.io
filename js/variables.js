@@ -37,10 +37,9 @@ function setupPlayer(x){
     playerIdle.style.height = player.height ;
     }else{
         playerIdle.style.width = player.width * (2 + "px");
-    playerIdle.style.height = "50px";
+        playerIdle.style.height = "50px";
     } 
-   // playerIdle.style.width = player.width;
-   // playerIdle.style.height = player.height;
+  
     currentPlayer = playerIdle.getAttribute('src');
 }
 
@@ -106,16 +105,13 @@ function queryFunction(x){
         games = new DisplayObjects("games", "800px", "200px", "200px", "150px", "absolute");
         contact = new DisplayObjects("contact", "800px", "500px", "200px", "150px", "absolute");
         javaProjects = new DisplayObjects("java projects", "450px", "100px", "200px", "150px", "absolute");
-     
-    
+        
     }
     
 }
 
 function setObjectsPositions(){
-
-    //npc = new DisplayObjects("npcOne", "500px", "500px", "100px", "100px", "absolute");
-    
+  
     npcOne.style.position = npc.position;
     npcOne.style.top = npc.y;
     npcOne.style.left = npc.x;
@@ -128,17 +124,13 @@ function setObjectsPositions(){
     aboutBtn.style.left = about.x;
     aboutBtn.style.width = about.width;
     aboutBtn.style.height = about.height;
-
-    //games = new DisplayObjects("games", "1000px", "0px", "50px", "20px", "absolute");
-    
+   
     gamesBtn.style.position = games.position;
     gamesBtn.style.top = games.y;
     gamesBtn.style.left = games.x;
     gamesBtn.style.width = games.width;
     gamesBtn.style.height = games.height;
-
-    //contact = new DisplayObjects("contact", "800px", "500px", "50px", "20px", "absolute");
-    
+   
     contactBtn.style.position = contact.position;
     contactBtn.style.top = contact.y;
     contactBtn.style.left = contact.x;
@@ -150,6 +142,5 @@ function setObjectsPositions(){
     javaBtn.style.left = javaProjects.x;
     javaBtn.style.width = javaProjects.width;
     javaBtn.style.height = javaProjects.height;
-
-    
+   
 }
