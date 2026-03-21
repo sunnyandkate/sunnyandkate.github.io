@@ -55,7 +55,7 @@ body{
 } */
 
 .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img,  
- .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .slidePuzzleBtn img{
+ .yogaCatBtn img, .catDetectiveAdventuresBtn img, .catDetectiveBtn img, .slidePuzzleBtn img{
     width: 100px; 
     height: auto;
 }
@@ -534,7 +534,7 @@ footer a{
     } */
 
     .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img, 
-      .yogaCatBtn img, .islandOfSecretsBtn img, .catDetectiveBtn img, .slidePuzzleBtn img{
+      .yogaCatBtn img, .catDetectiveAdventuresBtn img, .catDetectiveBtn img, .slidePuzzleBtn img{
         width: 200px;
         height: auto;
     }
