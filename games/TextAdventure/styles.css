@@ -1,6 +1,10 @@
 @font-face {
     font-family: "Sunnysfont";
-    src: url('../fonts/Sunnysfontstyle-Regular.ttf');
+    src: url('../../fonts/Sunnysfontstyle-Regular.ttf');
+}
+@font-face {
+    font-family: "Pixelfont";
+    src: url('../../fonts/Pixelfont.ttf');
 }
 body{
     margin: 0;
