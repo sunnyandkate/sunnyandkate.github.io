@@ -48,14 +48,10 @@ body{
    
 }
 
-/* 
-.cloudGameBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img{
-    width: 100px; 
-    height: auto;
-} */
+
 
 .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img,  
- .yogaCatBtn img, .catDetectiveAdventuresBtn img, .catDetectiveBtn img, .slidePuzzleBtn img{
+ .yogaCatBtn img, .catDetectiveAdventuresBtn img, .catDetectiveBtn img{
     width: 100px; 
     height: auto;
 }
@@ -527,14 +523,10 @@ footer a{
         min-height: 900px;  
     }
 
-    /* 
-     .cloudGameBtn img, .coinCollectorBtn img, .jumpingCatBtn img, .platformerBtn img{
-        width: 200px;
-        height: auto;
-    } */
+   
 
     .btnTextAdv img, .aboutBtn img, .gamesBtn img, .contactBtn img, 
-      .yogaCatBtn img, .catDetectiveAdventuresBtn img, .catDetectiveBtn img, .slidePuzzleBtn img{
+      .yogaCatBtn img, .catDetectiveAdventuresBtn img, .catDetectiveBtn img{
         width: 200px;
         height: auto;
     }
