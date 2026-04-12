@@ -199,6 +199,7 @@ body{
     background-image: url("../images/TitleImg.png");
     background-position-y: 60%;   
     background-repeat: no-repeat;
+    background-size: 100%;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
