@@ -24,13 +24,9 @@ function collisionGameDetection(x){
   
    
     //check collision with any objects
-    objectsCollision(player, islandOfSecrets, "games/IslandOfSecrets/index.html");
+    objectsCollision(player, catDetectiveAdventures, "games/CatDetectiveAdventures/index.html");
     objectsCollision(player, yogaCatAdventure, "games/YogaCatAdventureGame/index.html");
-   /*  
-    objectsCollision(player, cloudGame, "games/JumpingClouds.apk");
-    objectsCollision(player, coinCollector, "games/CoinCollector.apk");
-    objectsCollision(player, jumpingCat, "games/JumpingCat.apk");
-    objectsCollision(player, platformer, "games/Platformer/index.html"); */
+  
 
     if(x.matches){
         objectsCollision(player, catDetective, "games/CatDetectiveMobileGame.apk");
@@ -38,7 +34,6 @@ function collisionGameDetection(x){
         objectsCollision(player, catDetective, "games/CatDetective/index.html");
     }
     
-    objectsCollision(player, slidePuzzle, "games/SlidePuzzle/index.html");
     objectsCollision(player, textAdventure, "games/TextAdventure");
 }
 
