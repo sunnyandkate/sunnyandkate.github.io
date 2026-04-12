@@ -114,7 +114,7 @@ function setObjectsPositions(){
     catDetectiveAdventuresBtn.style.position = catDetectiveAdventures.position;
     catDetectiveAdventuresBtn.style.top = catDetectiveAdventures.y;
     catDetectiveAdventuresBtn.style.left = catDetectiveAdventures.x;
-    catDetectiveAdventuresBt.style.width = catDetectiveAdventures.width;
+    catDetectiveAdventuresBtn.style.width = catDetectiveAdventures.width;
     catDetectiveAdventuresBtn.style.height = catDetectiveAdventures.height;
     
 }
