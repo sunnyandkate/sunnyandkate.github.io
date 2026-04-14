@@ -199,6 +199,7 @@ body{
     background-image: url("../images/TitleImg.png");
     background-position-y: 60%;   
     background-repeat: no-repeat;
+    
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -492,6 +493,7 @@ footer a{
         font-size: 1.5rem;
         padding-top: 15rem;
         min-height: 100vh;
+        background-size: 100%;
     }
     .about-container .btn-row, .contact-container .btn-row{
         flex-direction: row;
