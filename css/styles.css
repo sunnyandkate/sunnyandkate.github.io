@@ -214,9 +214,11 @@ body{
 }
 
 .about-content{
-    background-image: url("../images/aboutpage-bg.png");
-    background-repeat: no-repeat;
-    background-size:100% 100%;
+    background-color:#fffcb3;
+    border:1rem solid #bd8e75;
+   // background-image: url("../images/aboutpage-bg.png");
+   // background-repeat: no-repeat;
+   // background-size:100% 100%;
     padding: 2rem;
     margin: .5rem;
 }
@@ -486,7 +488,7 @@ footer a{
     }
     .about-content{
        
-        background-size:100% 100%;
+      //  background-size:100% 100%;
         padding: 6rem;   
     }
     .about-container, .contact-container{
