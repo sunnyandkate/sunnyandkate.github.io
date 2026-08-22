@@ -1,10 +1,12 @@
 "# sunnyandkate.github.io" 
 
+# SUNNYANDKATE - an interactive game portfolio
+
 This website is an interactive game portfolio about my programming journey. 
 It features some of my projects and skills. Users can explore and check out 
 my projects.
 
-### 🛠️ Tech Stack
+###  Tech Stack
 * **Frontend:** HTML5 Canvas, CSS, JavaScript
 * **Data Layer:** Local Asynchronous JSON engine (`fortunes.json`)
 
@@ -13,7 +15,7 @@ my projects.
 ### Credits for the Background Music played in some of my games ###
 
 
-# YogaCatAdventure
+### YogaCatAdventure
 
 Credits:
 
@@ -26,7 +28,7 @@ Music promoted by https://www.chosic.com/free-music/all/
 
 
 
-# CatDetectiveAdventures
+### CatDetectiveAdventures
 
 Credits:
 
