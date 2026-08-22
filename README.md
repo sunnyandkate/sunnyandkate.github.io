@@ -1,5 +1,18 @@
 "# sunnyandkate.github.io" 
 
+This website is an interactive game portfolio about my programming journey. 
+It features some of my projects and skills. Users can explore and check out 
+my projects.
+
+### 🛠️ Tech Stack
+* **Frontend:** HTML5 Canvas, CSS, JavaScript
+* **Data Layer:** Local Asynchronous JSON engine (`fortunes.json`)
+
+
+
+### Credits for the Background Music played in some of my games ###
+
+
 # YogaCatAdventure
 
 Credits:
