@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SunnyandKate</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/cookieconsent.css">
+    <script src="js/cookieconsent.js"></script>
+    <link rel="stylesheet" href="css/styles.css?v=1.2.6" type="text/css">
+</head>
+<body>
+
+<div class="container">   
+    <canvas id="gameCanvas" width="320" height="180"></canvas>
+    <div id="ui-layer">  
+        <!--Top Right Resume Download Button-->     
+        <a href="resume.html" class="resumeBtnGame">RESUME</a>
+        <div class="infoStand"><img src="images/info.gif"></div>
+        <!--box container--> 
+        <div class="box-container">
+            <div class="left-box">
+                  <!-- Bottom Left Navigation Info -->
+                <button class="showInfo">INFO</button>               
+                <div class="box navigationInfo">  
+                    <button class="toggleBtn">X</button>                 
+                    <h3>HOW TO EXPLORE</h3>
+                    <ul>
+                        <li class="smScreenInfo"> <strong>Move Around:</strong> Use the Mobile Controls</li>
+                        <li class="bigScreenInfo"> <strong>Move Around:</strong> WASD or Arrow</li>
+                        <li> <strong>Enter House:</strong> Walk right in</li>
+                        <li> <strong>Talk to NPCs:</strong> Walk up to them</li>
+                        <li> <strong>Speedrun:</strong> Click a house</li>
+                    </ul>
+       
+                </div>
+            </div>
+                <!--mailbox-->
+                <div class="middle-top">
+                    <div class="mailboxModal">  
+                        <div class="box about-content">                   
+                            <button class="closeMailbox">X</button>
+                            <h3>Town Mailbox</h3>
+                            <p>Looking for the official paperwork? Grab a copy of my technical software resume here:</p>
+                            <a href="resume.html" class="modalResume">RESUME</a>                        
+                        </div>
+                    </div> 
+                    <!--telephone booth modal-->
+                    <div class="phoneModal">  
+                        <div class="box about-content">                                             
+                        <button class="closeModal">X</button>
+                        <h3>Calling Kate ...</h3>
+                                
+                        <div class="connect-buttons">
+                            <a href="mailto:sunnyandkate@icloud.com" class="phonebooth-link">Email me</a>
+                            <a href="https://sunnyandkate.itch.io" target="_blank" rel="noopener noreferrer" class="phonebooth-link">Itch.io</a>
+                            <a href="https://github.com/sunnyandkate" target="_blank" rel="noopener noreferrer" class="phonebooth-link">GitHub</a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="phonebooth-link">LinkedIn</a>                    
+                        </div>
+
+                        <p>or write a message:</p>
+                        <div class="phoneboothFooter">
+                            <img class="npc" src="images/CatNpc.png" width="50" height="50">                    
+                            <a class="contactInfo" href="mailto:sunnyandkate@icloud.com">sunnyandkate@icloud.com</a>                                                    
+                        </div> 
+                        </div>                     
+                    </div>
+                </div>
+                <div class="middle-bottom">
+                      <!--info stand box-->
+                    <div class="box infoStandBox" style="display: none;">  
+                        <button class="closeInfoStandBtn">X</button>          
+                        <p class="infoStandContent">dialog</p>
+                        <button class="nextBtn" style="display: none;"></button>                                             
+                    </div>
+                    <!--dialog box-->
+                    <div class="box dialogBox" style="display: none;">
+                        <button class="closeDialogBtn">X</button>           
+                        <p class="dialogContent">dialog</p>
+                        <div class="dialogButtons" style="display: none;">
+                            <button class="goInside">Yes</button>
+                            <button class="stayOutside">No</button>
+                        </div>  
+                        <button class="nextBtn" style="display: none;"></button>         
+                    </div>
+                    <div class="box welcome">
+                        <p class="welcome-info">
+                            Welcome! Press any key to begin. Explore the neighborhood and talk to NPCs. 
+                            Walk inside any house or click it for a quick look at my projects
+                        </p>
+                    </div>
+                </div>
+                <div class="right-top">
+                    <!--mobile controls-->
+                    <div class="mobile-controls-container">
+                        <div id="mobile-controls" class="touch-buttons">
+                            <button class="upBtn">up</button>
+                            <button class="rightBtn">right</button>
+                            <button class="downBtn">down</button>
+                            <button class="leftBtn">left</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-bottom">
+                    <footer>
+                        <div class="footer-container">
+                            <p class="copyright">&copy; 2026 sunnyandkate</p>
+                            <a href="mailto:sunnyandkate@icloud.com"><img src="images/letter.png"></a>
+                            <a href="legal.html">legal details <span>| </span></a>
+                            <a href="privacypolicy.html">privacy policy</a>
+                            
+                        </div>           
+                    </footer>
+                </div>         
+        </div>       
+    </div>
+</div>
+<div class="rotate-phone-text">
+    <p>Please rotate your phone to Landscape mode to play!</p>
+</div>
+<div id="fade-box" class="fade-screen"></div>
+
+
+
+<script src="js/variables.js"></script>
+<script src="js/variables-mainpage.js"></script>
+<script src="js/resizeHandler.js"></script>
+<script src="js/keyInput.js"></script>
+<script src="js/touchInput.js"></script>
+<script src="js/playermovement.js"></script>
+<script src="js/dialoges.js"></script>
+<script src="js/dialoges-mainpage.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/collision.js"></script>
+<script src="js/collision-mainpage.js"></script>
+<script src="js/overlay.js"></script>
+
+
+<script defer src="js/cookieconsent-init.js"></script>
+</body>
+</html>

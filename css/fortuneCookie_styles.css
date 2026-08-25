@@ -1,0 +1,66 @@
+#fortuneCookieModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999 !important;
+}
+.fortuneCookieContainer {
+  background-color: #fffcb3;
+  position: relative;
+  width: 30%; 
+  padding: 2rem;
+}
+.fortuneCookieModalHidden {
+  display: none !important;
+}
+.fortuneCookieContent {
+  background-color: #ebe3e0; 
+  border: 3px solid #3e2e28; 
+  padding: 25px 20px;
+  box-shadow: 0 8px 16px #3e2e28;
+  text-align: center;
+  position: relative;
+  outline: 0.3rem solid #c8776a; 
+  outline-offset: -0.6rem;        
+}
+
+#fortuneCookieText {
+  font-family: 'Pixelfont';
+  font-size: 1rem;
+  font-weight: bold;
+  color: #3e2e28;
+  image-rendering: pixelated;
+}
+
+#fortuneCookieAuthor {
+  font-family: 'Pixelfont';
+  font-size: .6rem;
+  color: #707b51; 
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  image-rendering: pixelated;
+}
+
+#fortuneCookieCloseBtn{
+  color: #fffcb3;
+  background-color: #707b51;
+  border: 1px solid #707b51;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  transition: all 0.15s ease-in-out; 
+  pointer-events: auto;
+}
+#fortuneCookieCloseBtn:hover {
+  border: 1px solid #707b51;
+  color: #707b51;
+  background-color: #fffcb3;
+}
