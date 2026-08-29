@@ -5,8 +5,8 @@ let projectModal = document.querySelector(".projectModal");
 function webDevHutCollision(){
     collisionDetection();
     checkWebDevHutExit();
-    changeDialogText(player, cmsProject, "#", "#", true, "cmsProject");
-    changeDialogText(player, invitationCard, "#", "#", true, "invitationCard");
+    changeDialogText(player, cmsProject, "https://sunnyandkate.byethost11.com/cms/index.php", "https://github.com/sunnyandkate/cms", true, "cmsProject");
+    changeDialogText(player, invitationCard, "https://sunnyandkate.byethost11.com/InvitationCard/", "https://github.com/sunnyandkate/InvitationCard", true, "invitationCard");
     changeDialogText(player, websiteTwo, "#", "#", true, "websiteTwo");
     changeDialogText(player, nextWebsiteProject, "#", "#", true, "nextWebsiteProject");
     changeDialogText(player, fortuneCookie, "#", "#", true, "fortuneCookie");
@@ -18,8 +18,8 @@ function webDevHutCollision(){
 canvas.addEventListener("click", function(e){
    const { clickX, clickY } = getGameClickCoords(e);
 
-    enterWebProjectByClicking(clickX, clickY, cmsProject, "see", "#", "#"); 
-    enterWebProjectByClicking(clickX, clickY, invitationCard, "see", "#", "#"); 
+    enterWebProjectByClicking(clickX, clickY, cmsProject, "see", "https://sunnyandkate.byethost11.com/cms/index.php", "https://github.com/sunnyandkate/cms"); 
+    enterWebProjectByClicking(clickX, clickY, invitationCard, "see", "https://sunnyandkate.byethost11.com/InvitationCard/", "https://github.com/sunnyandkate/InvitationCard"); 
     enterWebProjectByClicking(clickX, clickY, websiteTwo, "see", "#", "#"); 
     enterNextWebProjectByClicking(clickX, clickY, nextWebsiteProject, "#", "#"); 
     showFortuneCookieByClicking(clickX, clickY, fortuneCookie, "open");
@@ -48,34 +48,34 @@ function changeDialogText(player, object, page, sourceCode, value, dialogText){
             case "cmsProject":
                 selectedProject = page;
                 selectedSourceCode = sourceCode;
-                dialogContent.innerHTML = "<strong>CMS Project:</strong>  Coming in a few days. Check in later!";
-               // dialogButtons.style.display = "flex";
+                dialogContent.innerHTML = "<strong>CMS Project:</strong>  Do you want to have a look at this project?";
+                dialogButtons.style.display = "flex";
                 nextPlayerX = cmsProject.x;
                 nextPlayerY = cmsProject.y + cmsProject.height;
-/*
+
                 goInsideBtn.onclick = function(){                    
                     openProjectModal();
                 };
                 stayOutsideBtn.onclick = function(){
                     player.y += 10;
                     dialogBox.style.display = "none";
-                };         */          
+                };                   
                 break;
             case "invitationCard":
                 selectedProject = page;
                 selectedSourceCode = sourceCode;
                 dialogContent.innerHTML = "<strong>Invitation Card:</strong>  Soon this project is going to be available. Check in later!";
-             //   dialogButtons.style.display = "flex";
+                dialogButtons.style.display = "flex";
                 nextPlayerX = invitationCard.x;
                 nextPlayerY = invitationCard.y + invitationCard.height;
-/*
+
                 goInsideBtn.onclick = function(){                    
                     openProjectModal();
                 };
                 stayOutsideBtn.onclick = function(){
                     player.y += 10;
                     dialogBox.style.display = "none";
-                };        */           
+                };                   
                 break;
              case "websiteTwo":
                 selectedProject = page;
