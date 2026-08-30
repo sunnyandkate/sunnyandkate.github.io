@@ -152,7 +152,7 @@ function checkGameInfoStandCollision(player, object){
 }
 
 function houseDialog(house, action, page){
-    selectedProject = page; 
+    selectedGame = page; 
     dialogContent.innerHTML = `do you want to ${action} the ${house.name}`;
     dialogButtons.style.display = "flex";
     nextBtn.style.display = "none";

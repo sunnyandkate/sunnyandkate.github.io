@@ -19,8 +19,8 @@ arcadeDeskImg.src = "images/arcadeDesk.png";
 plantImg.src = "images/plant.png";
 
 const mobileGamesList = [
-    { id: "catDetective", title: "Cat Detective:First Case", format: "APK", size: "22.5mb", downloadLink: "games/CatDetectiveMobileGame.apk"},
-    { id: "Maze", title: "Maze", format: "APK", size: "23.2mb", downloadLink: "games/mobileMaze.apk"}
+    { id: "catDetective", title: "Cat Detective:First Case", platform: "Android Mobile", format: "APK", size: "22.5mb", downloadLink: "games/CatDetectiveMobileGame.apk"},
+    { id: "Maze", title: "Maze", format: "APK", platform: "Android Mobile", size: "23.2mb", downloadLink: "games/mobileMaze.apk"}
 ];
 
 const arcadeYogaCat = {

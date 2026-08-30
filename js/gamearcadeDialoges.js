@@ -159,11 +159,13 @@ function createScrollGameList(){
 }
 function updateGameList(gameSelected){
     const topTitle = document.querySelector(".topTitle");
+    const platformText = document.querySelector(".platform");
     const formatText = document.querySelector(".meta-format");
     const sizeText = document.querySelector(".meta-size");
     const downloadMobileGameBtn = document.querySelector(".mobile-game-download")
   
     topTitle.textContent = gameSelected.title;
+    platformText.textContent = gameSelected.platform;
     formatText.textContent = gameSelected.format;
     sizeText.textContent = gameSelected.size;
 
