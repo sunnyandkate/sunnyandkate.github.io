@@ -227,23 +227,22 @@ function checkInfoStandCollision(player, object){
 
 function houseDialog(house, action, page){
     selectedProject = page; 
-   // dialogContent.innerHTML = `<strong>${house.name}:</strong>  do you want to ${action} the ${house.name}`;
-    dialogContent.innerHTML = `<strong>${house.name}:</strong>  We are currently working on this project. Coming soon!!`;
- 
-   // dialogButtons.style.display = "flex";
+    dialogContent.innerHTML = `<strong>${house.name}:</strong>  do you want to ${action} the ${house.name}`;
+    
+    dialogButtons.style.display = "flex";
     nextBtn.style.display = "none";
     //save the position of the player next to the webdev, so he doesn't collide anymore
     nextPlayerX = house.x;
     nextPlayerY = house.y + house.height;
 
- /*   goInsideBtn.onclick = function(){
+    goInsideBtn.onclick = function(){
         openProjectModal();
         houseClick = false;
     };
     stayOutsideBtn.onclick = function(){
         dialogBox.style.display = "none";
         houseClick = false;
-    };   */ 
+    };    
 }
 
 function nextProjectDialog(house, page){
