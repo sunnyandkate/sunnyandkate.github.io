@@ -1,5 +1,6 @@
 let selectedProject = "";
 let selectedSourceCode = "";
+let ctaText = "";
 let projectModal = document.querySelector(".projectModal");
 let certificateModal = document.querySelector(".certificateModal");
 
@@ -9,6 +10,7 @@ function javaHutCollision(){
     changeDialogText(player, slotMachine, "../games/JavaProjects/Slotmachine.jar", "https://github.com/sunnyandkate/Slotmachine", true, "slotMachine");
     changeDialogText(player, calculator, "../games/JavaProjects/Calculator.jar", "https://github.com/sunnyandkate/Calculator", true, "calculator");
     changeDialogText(player, textEditor, "../games/JavaProjects/TextEditor.jar", "https://github.com/sunnyandkate/TextEditor", true, "textEditor");
+    changeDialogText(player, inventory, "https://game-inventory-explorer.vercel.app", "https://github.com/sunnyandkate/game-inventory-explorer", true, "inventory");
     changeDialogText(player, javaCertificate, "javaCertificate.html", "#", false, "javaCertificate");
     checkInfoStandCollision(player, javaHutGuide);
 }
@@ -17,9 +19,10 @@ function javaHutCollision(){
 canvas.addEventListener("click", function(e){
    const { clickX, clickY } = getGameClickCoords(e);
 
-    enterJavaProjectByClicking(clickX, clickY, slotMachine, "see", "../games/JavaProjects/Slotmachine.jar", "https://github.com/sunnyandkate/Slotmachine"); 
-    enterJavaProjectByClicking(clickX, clickY, calculator, "see", "../games/JavaProjects/Calculator.jar", "https://github.com/sunnyandkate/Calculator"); 
-    enterJavaProjectByClicking(clickX, clickY, textEditor, "see", "../games/JavaProjects/TextEditor.jar", "https://github.com/sunnyandkate/TextEditor"); 
+    enterJavaProjectByClicking(clickX, clickY, slotMachine, "see", "download the jar file", "../games/JavaProjects/Slotmachine.jar", "https://github.com/sunnyandkate/Slotmachine"); 
+    enterJavaProjectByClicking(clickX, clickY, calculator, "see", "download the jar file", "../games/JavaProjects/Calculator.jar", "https://github.com/sunnyandkate/Calculator"); 
+    enterJavaProjectByClicking(clickX, clickY, textEditor, "see", "download the jar file", "../games/JavaProjects/TextEditor.jar", "https://github.com/sunnyandkate/TextEditor"); 
+    enterJavaProjectByClicking(clickX, clickY, inventory, "see", "visit the website", "https://game-inventory-explorer.vercel.app", "https://github.com/sunnyandkate/game-inventory-explorer");
     showJavaCertificateByClicking(clickX, clickY, javaCertificate);   
     enterInfoStandByClicking(clickX, clickY, javaHutGuide);
 });
@@ -35,6 +38,7 @@ function changeDialogText(player, object, page, sourceCode, value, dialogText){
             case "slotMachine":
                 selectedProject = page;
                 selectedSourceCode = sourceCode;
+                ctaText = "download the jar file";
                 dialogContent.innerHTML = "<strong>Slotmachine:</strong>  Do you want to have a look at this Project?";
                 dialogButtons.style.display = "flex";
                 nextPlayerX = slotMachine.x;
@@ -51,6 +55,7 @@ function changeDialogText(player, object, page, sourceCode, value, dialogText){
             case "calculator":
                 selectedProject = page;
                 selectedSourceCode = sourceCode;
+                ctaText = "download the jar file";
                 dialogContent.innerHTML = "<strong>Calculator:</strong>  Do you want to have a look at this Project?";
                 dialogButtons.style.display = "flex";
                
@@ -68,11 +73,30 @@ function changeDialogText(player, object, page, sourceCode, value, dialogText){
             case "textEditor":
                 selectedProject = page;
                 selectedSourceCode = sourceCode;
+                ctaText = "download the jar file";
                 dialogContent.innerHTML = "<strong>TextEditor:</strong>  Do you want to have a look at this Project?";
                 dialogButtons.style.display = "flex";
                
                 nextPlayerX = textEditor.x;
                 nextPlayerY = textEditor.y + textEditor.height ;
+ 
+                goInsideBtn.onclick = function(){                    
+                    openProjectModal();
+                };
+                stayOutsideBtn.onclick = function(){
+                    player.y += 10;
+                    dialogBox.style.display = "none";
+                };      
+                break;
+             case "inventory":
+                selectedProject = page;
+                selectedSourceCode = sourceCode;
+                ctaText = "visit the website";
+                dialogContent.innerHTML = "<strong>Game Inventory Explorer:</strong>  Do you want to have a look at this Project?";
+                dialogButtons.style.display = "flex";
+               
+                nextPlayerX = inventory.x;
+                nextPlayerY = inventory.y + inventory.height ;
  
                 goInsideBtn.onclick = function(){                    
                     openProjectModal();
@@ -106,11 +130,17 @@ function openProjectModal(){
 websiteBtn.addEventListener('click', visitProjectWebsite);
 function visitProjectWebsite(event){
     event.preventDefault();
-  
-    const userConfirmed = confirm('Do you want to download the jar file?');
+    
+    const userConfirmed = confirm(`Do you want to ${ctaText} ?`);
   
     if(userConfirmed){
-        window.location.href = selectedProject;
+       
+        if(ctaText === "visit the website"){
+            window.open(selectedProject, '_blank', 'noopener');
+        }else{
+            window.open(selectedProject, '_self'); 
+        }
+       
     }
   
 }
@@ -144,8 +174,8 @@ function checkInfoStandCollision(player, object){
 
 //java projects
 
-function enterJavaProjectByClicking(clickX, clickY, house, action, page, sourceCode){
-    
+function enterJavaProjectByClicking(clickX, clickY, house, action, incomingCtaText, page, sourceCode){
+   
     if (
         clickX >= house.x &&
         clickX <= house.x + house.width &&
@@ -153,6 +183,7 @@ function enterJavaProjectByClicking(clickX, clickY, house, action, page, sourceC
         clickY <= house.y + house.height
     ){
         selectedSourceCode = sourceCode;
+        ctaText = incomingCtaText;
         dialogBoxOpen = true;
         houseClick = true;        
         houseDialog(house, action, page);     
@@ -161,7 +192,7 @@ function enterJavaProjectByClicking(clickX, clickY, house, action, page, sourceC
 
 
 function houseDialog(house, action, page){  
-    selectedProject = page; 
+    selectedProject = page;    
     dialogContent.innerHTML = `do you want to ${action} the ${house.name}`;
     dialogButtons.style.display = "flex";
     nextBtn.style.display = "none";

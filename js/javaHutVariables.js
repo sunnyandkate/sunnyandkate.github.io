@@ -3,6 +3,7 @@ const javaHutGuideImg = new Image();
 const slotMachineImg = new Image();
 const calculatorImg = new Image();
 const textEditorImg = new Image();
+const inventoryImg = new Image();
 const javaCertificateImg = new Image();
 const plantImg = new Image();
 
@@ -11,6 +12,7 @@ javaHutGuideImg.src = "images/javaHutGuide.png";
 slotMachineImg.src = "images/slotmachine.png";
 calculatorImg.src = "images/calculatorImg.png";
 textEditorImg.src = "images/textEditorImg.png";
+inventoryImg.src = "images/inventoryImg.png";
 javaCertificateImg.src = "images/javaCertificateImg.png";
 plantImg.src = "images/plant.png";
 
@@ -42,6 +44,13 @@ const textEditor = {
     width: tileSize,
     height: tileSize
 }
+const inventory = {
+    name: "Inventory",
+    x: 9 * tileSize,
+    y: 2 * tileSize,
+    width: tileSize,
+    height: tileSize
+}
 const javaCertificate = {
     name: "JavaCertificate",
     x: 12 * tileSize,
@@ -65,7 +74,7 @@ const exitDoor = {
 const mapGrid = [
         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
         [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1],
-        [1, 1, 1, 2, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 1, 1],
+        [1, 1, 1, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 2, 2, 1, 1, 1],
         [1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 1, 1],
         [1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1],
         [1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 1, 1],
