@@ -5,6 +5,7 @@ let nextPlayerX;
 let nextPlayerY;
 let buttonPressed = "";
 let walkFrameIndex = 0;
+let bgMusic;
 
 //PLAYER
 const playerIdle = new Image();
@@ -31,6 +32,7 @@ const webdevHouseImg = new Image();
 const infoHouseImg = new Image();
 const phoneBoothImg = new Image();
 const mailboxImg = new Image();
+const musicBoxImg = new Image();
 const backgroundimage = new Image();
 
 
@@ -46,6 +48,7 @@ javaHouseImg.src = 'images/javaHut.png';
 webdevHouseImg.src = 'images/webdevHut.png';
 infoHouseImg.src = 'images/infostand.png';
 phoneBoothImg.src ='images/phoneBoothImg.png';
+musicBoxImg.src = 'images/musicBox.png';
 mailboxImg.src = 'images/mailboxImg.png';
 
 //PLAYER
@@ -131,10 +134,15 @@ const infoHouse = {
     width: 2 * tileSize,
     height: 2 * tileSize
 };
-
 const phoneBooth = {
     x: 4 * tileSize,
     y:  6.5 * tileSize,
+    width: 2 * tileSize,
+    height: 2 * tileSize
+};
+const musicBox = {
+    x: 13 * tileSize,
+    y:  5.5 * tileSize,
     width: 2 * tileSize,
     height: 2 * tileSize
 };

@@ -2,6 +2,7 @@ const arcadeBackgroundImg = new Image();
 const arcadeYogaCatImg = new Image();
 const arcadeCatDetectiveImg = new Image();
 const arcadeCatDetectiveAdventuresImg = new Image();
+const musicToggleButtonImg = new Image();
 const nextProjectImg = new Image();
 const arcadeGuideImg = new Image();
 const mobileConsoleImg = new Image();
@@ -12,6 +13,7 @@ arcadeBackgroundImg.src = "images/gamearcadehouse.png";
 arcadeYogaCatImg.src = "images/arcadeYogaCatImg.png";
 arcadeCatDetectiveImg.src = "images/arcadeCatDetective.png";
 arcadeCatDetectiveAdventuresImg.src = "images/arcadeCatDetective.png";
+musicToggleButtonImg.src = "images/musicToggleButtonImg.png";
 nextProjectImg.src = "images/nextProject.png";
 arcadeGuideImg.src = "images/arcadeGuide.png";
 mobileConsoleImg.src = "images/mobileConsole.png";
@@ -64,6 +66,13 @@ const mobileConsole = {
     x: 5 * tileSize,
     y: 6 * tileSize,
     width: 2 * tileSize,
+    height: tileSize
+}
+const musicToggleButton = {
+    name: "Music Toggle Button",
+    x: 16 * tileSize,
+    y: tileSize,
+    width: tileSize,
     height: tileSize
 }
 const arcadeDesk = {

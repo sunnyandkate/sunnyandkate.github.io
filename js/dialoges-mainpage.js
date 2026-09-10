@@ -3,6 +3,10 @@ let infoStandBox = document.querySelector(".infoStandBox");
 let infoStandContent = document.querySelector(".infoStandContent");
 let closeInfoStandBtn = document.querySelector(".closeInfoStandBtn");
 
+const audioModal = document.querySelector(".audio-modal");
+const audioBtn = document.querySelector(".audio-btn");
+const closeAudioBtn = document.querySelector(".close-audio-btn");
+
 document.addEventListener('click', hideWelcomeMessage);
 document.addEventListener('keydown', hideWelcomeMessage);
 //WELCOME MESSAGE
@@ -134,6 +138,34 @@ function closeMailboxModal(){
     houseClick = false;
     mailboxModal.classList.remove("open");
 }
+/*musicbox*/
+function enterMusicBoxByClicking(clickX, clickY, house, nextPlayerX, nextPlayerY){
+     if (
+        clickX >= house.x &&
+        clickX <= house.x + house.width &&
+        clickY >= house.y &&
+        clickY <= house.y + house.height
+    ){
+        //move player in front of the musicBox
+        player.x = nextPlayerX;
+        player.y = nextPlayerY;
+        houseClick = true;   
+        audioModal.style.display = 'flex';
+    }
+}
+function openMusicBoxModal(){
+    audioModal.style.display = 'flex';
+}
+closeAudioBtn.addEventListener("click", closeMusicBoxModal);
+function closeMusicBoxModal(){
+    nextPlayerX = musicBox.x;
+    nextPlayerY = musicBox.y + musicBox.height;
+    //move player in front of the musicBox
+    player.x = nextPlayerX;
+    player.y = nextPlayerY;
+    houseClick = false;
+    audioModal.style.display = 'none';
+}
 //INFOSTAND
 function npcDialog(){
     infoStandBox.style.display = "block";
@@ -183,6 +215,7 @@ function closeInfoStandDialog(){
 function closeAllDialoges(){
     mailboxModal.classList.remove("open");
     phoneModal.classList.remove("open");
+    audioModal.style.display = 'none';
 }
 
 
@@ -196,8 +229,16 @@ function houseDialog(house, action, page){
     nextPlayerY = house.y + house.height;
 
     goInsideBtn.onclick = function(){
-        window.location.href = page;
+        sessionStorage.setItem('musicTime', bgMusic.currentTime);
+        sessionStorage.setItem('musicPlaying', bgMusic.paused ? 'false' : 'true');
+       
         houseClick = false;
+        
+        setTimeout(() => {
+            window.location.href = page;
+        }, 50);
+        
+        
     };
     stayOutsideBtn.onclick = function(){
         dialogBox.style.display = "none";

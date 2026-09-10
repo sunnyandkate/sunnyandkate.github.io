@@ -24,6 +24,7 @@ canvas.addEventListener("click", function(e){
     enterNextWebProjectByClicking(clickX, clickY, nextWebsiteProject, "#", "#"); 
     showFortuneCookieByClicking(clickX, clickY, fortuneCookie, "open");
     enterInfoStandByClicking(clickX, clickY, webDevHutGuide);
+    enterMusicToggleButtonByClicking(clickX, clickY, musicToggleButton);
 });
 
 //checks the house exit
@@ -34,6 +35,8 @@ function checkWebDevHutExit() {
 
         sessionStorage.setItem('spawnX', '11');
         sessionStorage.setItem('spawnY', '3');
+        sessionStorage.setItem('musicTime', bgMusic.currentTime);
+        sessionStorage.setItem('musicPlaying', bgMusic.paused ? 'false' : 'true')
         setTimeout(() => window.location.href = "sunnyandkate.html", 600)
     }
 }

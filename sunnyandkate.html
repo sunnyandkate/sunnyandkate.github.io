@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/cookieconsent.css">
     <script src="js/cookieconsent.js"></script>
     <link rel="stylesheet" href="css/styles.css?v=1.2.6" type="text/css">
+    <link rel="stylesheet" href="css/audio_styles.css" type="text/css">
 </head>
 <body>
 
@@ -65,6 +66,26 @@
                         </div> 
                         </div>                     
                     </div>
+                    <!--audio modal-->                  
+                    <div class="audio-modal">
+                        <div class="box about-content">
+                            <button class="close-audio-btn">X</button>        
+                            <h3>Sound Options</h3>
+                            <div class="audio-controls">
+                                <button class="play-btn">Play</button>
+                                <div class="volume-slider-container">
+                                    <label for="volumeSlider">Volume:</label>
+                                    <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+                                </div>
+                            </div>
+                            <div class="modal-credit-box">
+                                <p><strong>Music Credit:</strong></p>
+                                <p>"Paradise Found" Kevin MacLeod (<a href="https://incompetech.com" target="_blank" rel="noopener">incompetech.com</a>)</p>
+                                <p>Licensed under <a href="http://creativecommons.org" target="_blank" rel="noopener">CC BY 4.0</a></p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="middle-bottom">
                       <!--info stand box-->
@@ -106,9 +127,9 @@
                         <div class="footer-container">
                             <p class="copyright">&copy; 2026 sunnyandkate</p>
                             <a href="mailto:sunnyandkate@icloud.com"><img src="images/letter.png"></a>
-                            <a href="legal.html">legal details <span>| </span></a>
-                            <a href="privacypolicy.html">privacy policy</a>
-                            
+                            <a href="legal.html">legal details<span>|</span></a>
+                            <a href="privacypolicy.html">privacy policy <span>|</span></a>
+                            <a href="credits.html">credits</a>                           
                         </div>           
                     </footer>
                 </div>         
@@ -124,6 +145,8 @@
 
 <script src="js/variables.js"></script>
 <script src="js/variables-mainpage.js"></script>
+<script src="js/audiomanager.js"></script>
+<script src="js/audiomanager-mainpage.js"></script>
 <script src="js/resizeHandler.js"></script>
 <script src="js/keyInput.js"></script>
 <script src="js/touchInput.js"></script>
@@ -134,7 +157,6 @@
 <script src="js/collision.js"></script>
 <script src="js/collision-mainpage.js"></script>
 <script src="js/overlay.js"></script>
-
 
 <script defer src="js/cookieconsent-init.js"></script>
 </body>

@@ -334,7 +334,8 @@ canvas{
     padding: .3rem .4rem;
 }
 .toggleBtn:hover, .closeModal:hover, .closeDialogBtn:hover, .closeArcadeInfoBtn:hover, 
-.closeWebDevInfoBtn:hover, .closeJavaHutInfoBtn:hover, .closeConsoleBtn:hover, .closeInfoStandBtn:hover{
+.closeWebDevInfoBtn:hover, .closeJavaHutInfoBtn:hover, .closeConsoleBtn:hover, .closeInfoStandBtn:hover,
+.close-audio-btn:hover{
   border: 1px solid #707b51;
   color: #707b51;
   background-color: #fffcb3;
@@ -370,7 +371,7 @@ canvas{
     display:none;
 }
 /*mailbox modal*/
-.mailboxModal, .gameConfirmModal, .projectModal, .mobileGamesConsoleContainer{
+.mailboxModal, .gameConfirmModal, .projectModal, .mobileGamesConsoleContainer, .audio-modal{
     font-family: "Pixelfont";
     font-size:1rem;
     text-transform: uppercase;   
@@ -473,7 +474,7 @@ canvas{
 .mailboxModal.open{
     display: flex;
 }
-.modalResume{
+.modalResume, .play-btn{
     font-family: "Pixelfont";
     font-size: 0.8rem;
     color: #707b51;
@@ -485,6 +486,10 @@ canvas{
     text-decoration: none;
     z-index: 999; 
     pointer-events: auto;
+    cursor: pointer;
+}
+.play-btn{
+    margin-bottom: 1rem;
 }
 /*phone booth modal*/
 .phoneModal{
@@ -532,7 +537,7 @@ canvas{
     margin-top: auto;
     width: 100%;
 }
-.closeModal, .closeMailbox, .closeModalBtn{
+.closeModal, .closeMailbox, .closeModalBtn, .close-audio-btn{
   color: #fffcb3;
   background-color: #707b51;
   border: 1px solid #707b51;
@@ -627,7 +632,7 @@ canvas{
     text-decoration: none;
     z-index: 999; 
 }
-.startBtn:hover, .resumeBtn:hover, .modalResume:hover, .connect-buttons a:hover{
+.startBtn:hover, .resumeBtn:hover, .modalResume:hover, .connect-buttons a:hover, .play-btn:hover{
     color: #fffcb3;
     background-color: #707b51;
     border: 2px solid #fffcb3;
@@ -723,7 +728,7 @@ canvas{
     width: 100%;
     object-fit:cover;
 }
-.privacyPolicy, .legal{
+.privacyPolicy, .legal, .credits-container{
     font-family: AppleGothic, Arial, Helvetica, sans-serif;
     color:#707b51;
     margin:4rem auto; 
@@ -740,7 +745,7 @@ canvas{
 .legal p{
     margin:0 auto;
 }
-.privacyPolicy a, .legal a{
+.privacyPolicy a, .legal a, .credits-container a{
     color:#3e2e28;
     font-size:.8rem;
     word-break:break-all;
@@ -837,6 +842,12 @@ footer a{
 }
 .footer-container img{
     width: 1rem;
+}
+.footer-container span{
+    margin-left: 1rem;
+}
+.footer-container a:last-child{
+    margin-right: 0rem;
 }
 .footer-container a{
     pointer-events: auto !important;
@@ -1010,10 +1021,10 @@ footer a{
     #title{
         width: 100%;
     }
-    .privacyPolicy, .legal{
+    .privacyPolicy, .legal, .credits-container{
         margin-top:10rem;
     }
-    .privacyPolicy a, .legal a{
+    .privacyPolicy a, .legal a, .credits-container a{
         font-size:1rem;
     }
     .connect-icons{
@@ -1101,14 +1112,14 @@ footer a{
         margin: 0;
         border: 0.2rem solid #707b51;
     }
-    .mailboxModal, .phoneModal{
+    .mailboxModal, .phoneModal, .audio-modal{
         font-size: .6rem;
     }
     .modalResume{
         font-size: .5rem;
         padding: .3rem;
     }
-    .closeMailbox{
+    .closeMailbox, .close-audio-btn{
         padding: .3rem;
     }
     .resumeBtnGame{
@@ -1207,6 +1218,9 @@ footer a{
     }
     .footer-container p{
         margin: .5rem;
+    }
+    .footer-container a:last-child{
+        margin-right: 1rem;
     }
 }
 @media (max-width: 1200px){

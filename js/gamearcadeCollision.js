@@ -27,6 +27,7 @@ canvas.addEventListener("click", function(e){
     enterNextProjectByClicking(clickX, clickY, nextProject);
     enterInfoStandByClicking(clickX, clickY, arcadeGuide);
     enterMobileConsoleByClicking(clickX, clickY, mobileConsole);
+    enterMusicToggleButtonByClicking(clickX, clickY, musicToggleButton);
 });
 
 function changeDialogText(player, object, page, value, dialogText){

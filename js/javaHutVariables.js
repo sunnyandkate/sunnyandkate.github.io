@@ -5,6 +5,7 @@ const calculatorImg = new Image();
 const textEditorImg = new Image();
 const inventoryImg = new Image();
 const javaCertificateImg = new Image();
+const musicToggleButtonImg = new Image();
 const plantImg = new Image();
 
 javaHutBackgroundImg.src = "images/javaHouse.png";
@@ -14,6 +15,7 @@ calculatorImg.src = "images/calculatorImg.png";
 textEditorImg.src = "images/textEditorImg.png";
 inventoryImg.src = "images/inventoryImg.png";
 javaCertificateImg.src = "images/javaCertificateImg.png";
+musicToggleButtonImg.src = "images/musicToggleButtonImg.png";
 plantImg.src = "images/plant.png";
 
 const javaHutGuide = {
@@ -55,6 +57,13 @@ const javaCertificate = {
     name: "JavaCertificate",
     x: 12 * tileSize,
     y:  tileSize,
+    width: tileSize,
+    height: tileSize
+}
+const musicToggleButton = {
+    name: "Music Toggle Button",
+    x: 16 * tileSize,
+    y: tileSize,
     width: tileSize,
     height: tileSize
 }

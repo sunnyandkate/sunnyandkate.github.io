@@ -96,6 +96,30 @@ function checkInfoStandBox(){
     }
 }
 
+//MUSIC TOGGLE BUTTON//
+function enterMusicToggleButtonByClicking(clickX, clickY, house){
+   
+     if (
+        clickX >= house.x &&
+        clickX <= house.x + house.width &&
+        clickY >= house.y &&
+        clickY <= house.y + house.height
+    ){
+        if (bgMusic.paused) {
+            // Unpause track
+            bgMusic.volume = baseVolume * 0.3;
+            bgMusic.play().catch(e => console.log(e));
+            isPlaying = true;
+            sessionStorage.setItem('musicPlaying', 'true');
+        } else {
+            // Pause track
+            bgMusic.pause();
+            isPlaying = false;
+            sessionStorage.setItem('musicPlaying', 'false');
+        }      
+    }
+}
+
 //FORTUNE COOKIE
 
 // Target the unique fortune modal components

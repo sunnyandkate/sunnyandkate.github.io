@@ -36,7 +36,21 @@ Credits:
 
 Music:
 
-Music: Zen Garden by Shane Ivers - https://www.silvermansound.com
+Zen Garden by Shane Ivers - https://www.silvermansound.com
 Licensed under Creative Commons Attribution 4.0 International License
 https://creativecommons.org/licenses/by/4.0/
 Music promoted by https://www.chosic.com/free-music/all/
+
+
+
+### Background Music
+
+Credits:
+
+Music:
+
+Paradise Found by Kevin MacLeod 
+(<a href="https://incompetech.com" target="_blank" rel="noopener">incompetech.com</a>)<br>
+Licensed under Creative Commons: By Attribution 4.0<br>
+<a href="http://creativecommons.org" target="_blank" rel="noopener">http://creativecommons.org</a>
+        

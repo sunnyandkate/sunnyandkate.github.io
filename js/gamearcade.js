@@ -25,6 +25,7 @@ function drawGameArcadeInterior(ctx){
     ctx.drawImage(arcadeYogaCatImg, arcadeYogaCat.x, arcadeYogaCat.y, arcadeYogaCat.width, arcadeYogaCat.height);
     ctx.drawImage(arcadeCatDetectiveImg, arcadeCatDetective.x, arcadeCatDetective.y, arcadeCatDetective.width, arcadeCatDetective.height);
     ctx.drawImage(arcadeCatDetectiveAdventuresImg, arcadeCatDetectiveAdventures.x, arcadeCatDetectiveAdventures.y, arcadeCatDetectiveAdventures.width, arcadeCatDetectiveAdventures.height);
+    ctx.drawImage(musicToggleButtonImg, musicToggleButton.x, musicToggleButton.y, musicToggleButton.width, musicToggleButton.height); 
     ctx.drawImage(nextProjectImg, nextProject.x, nextProject.y, nextProject.width, nextProject.height);
     ctx.drawImage(arcadeGuideImg, arcadeGuide.x, arcadeGuide.y, arcadeGuide.width, arcadeGuide.height);   
     ctx.drawImage(mobileConsoleImg, mobileConsole.x, mobileConsole.y, mobileConsole.width, mobileConsole.height);

@@ -25,6 +25,7 @@ canvas.addEventListener("click", function(e){
     enterJavaProjectByClicking(clickX, clickY, inventory, "see", "visit the website", "https://game-inventory-explorer.vercel.app", "https://github.com/sunnyandkate/game-inventory-explorer");
     showJavaCertificateByClicking(clickX, clickY, javaCertificate);   
     enterInfoStandByClicking(clickX, clickY, javaHutGuide);
+    enterMusicToggleButtonByClicking(clickX, clickY, musicToggleButton);
 });
 
 

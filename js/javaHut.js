@@ -28,6 +28,7 @@ function drawJavaHutInterior(ctx){
     ctx.drawImage(textEditorImg, textEditor.x, textEditor.y, textEditor.width, textEditor.height);
     ctx.drawImage(inventoryImg, inventory.x, inventory.y, inventory.width, inventory.height);
     ctx.drawImage(javaCertificateImg, javaCertificate.x, javaCertificate.y, javaCertificate.width, javaCertificate.height);
+    ctx.drawImage(musicToggleButtonImg, musicToggleButton.x, musicToggleButton.y, musicToggleButton.width, musicToggleButton.height); 
     ctx.drawImage(plantImg, plant.x, plant.y, plant.width, plant.height);
 }
 

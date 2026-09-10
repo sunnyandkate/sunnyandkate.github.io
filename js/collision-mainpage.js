@@ -12,6 +12,7 @@ function collisionWithHousesandNPC(){
     changeDialogText(player, webdevHouseDoor, "webDevHut.html", true, "webDevHut");
     changeDialogText(player, phoneBooth, "#", false, "phoneBooth");
     changeDialogText(player, mailbox, "#", false, "mailboxText");
+    changeDialogText(player, musicBox, "#", false, "musicBox");
 
     checkInfoStandCollision(player, infoHouse, infoNPC.x, infoNPC.y + infoNPC.height);
 }
@@ -27,6 +28,7 @@ canvas.addEventListener("click", function(e){
     enterPhoneBoothByClicking(clickX, clickY, phoneBooth, phoneBooth.x + tileSize, phoneBooth.y + phoneBooth.height + tileSize/2);
     enterInfoStandByClicking(clickX, clickY, infoHouse, infoNPC.x, infoNPC.y + infoNPC.height + tileSize);
     enterMailboxByClicking(clickX, clickY, mailbox, mailbox.x, mailbox.y + mailbox.height);
+    enterMusicBoxByClicking(clickX, clickY, musicBox, musicBox.x, musicBox.y + musicBox.height);
 });
 function changeDialogText(player, object, page, value, dialogText){
     objectCollision(player, object, page, value, dialogText);
@@ -69,7 +71,12 @@ function changeDialogText(player, object, page, value, dialogText){
                 nextBtn.style.display = "none";
                 currentCollision = "mailBox";
                 break;
-
+            case "musicBox":
+                openMusicBoxModal();
+                dialogButtons.style.display = "none";
+                nextBtn.style.display = "none";
+                currentCollision = "musicBox";
+                break;
             case "gameHut":
                 dialogContent.textContent = "Do you want to enter The Game Arcade";
                 dialogButtons.style.display = "flex";

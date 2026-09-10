@@ -48,6 +48,7 @@ function draw(){
     ctx.drawImage(webdevHouseImg, webDevHut.x, webDevHut.y, webDevHut.width, webDevHut.height);
     ctx.drawImage(phoneBoothImg, phoneBooth.x, phoneBooth.y, phoneBooth.width, phoneBooth.height);
     ctx.drawImage(mailboxImg, mailbox.x, mailbox.y, mailbox.width, mailbox.height);
+    ctx.drawImage(musicBoxImg, musicBox.x, musicBox.y, musicBox.width, musicBox.height);
     ctx.drawImage(infoNPCImg, infoNPC.x, infoNPC.y, infoNPC.width, infoNPC.height);
     ctx.drawImage(infoHouseImg, infoHouse.x, infoHouse.y, infoHouse.width, infoHouse.height);
     ctx.drawImage(catNPCImg, catNPC.x, catNPC.y, catNPC.width, catNPC.height);

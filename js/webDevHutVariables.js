@@ -5,6 +5,7 @@ const websiteTwoImg = new Image();
 const nextWebsiteProjectImg = new Image();
 const cmsProjectImg = new Image();
 const fortuneCookieImg = new Image();
+const musicToggleButtonImg = new Image();
 const plantImg = new Image();
 const houseWindowImg = new Image();
 const houseWindowTwoImg = new Image();
@@ -16,6 +17,7 @@ websiteTwoImg.src = "images/desk.png";
 nextWebsiteProjectImg.src = "images/nextWebsiteProjectImg.png";
 cmsProjectImg.src = "images/cmsProject.png";
 fortuneCookieImg.src = "images/fortuneCookieImg.png";
+musicToggleButtonImg.src = "images/musicToggleButtonImg.png";
 plantImg.src = "images/plant.png";
 houseWindowImg.src = "images/houseWindow.png";
 houseWindowTwoImg.src = "images/houseWindow.png";
@@ -62,6 +64,13 @@ const fortuneCookie = {
     y: tileSize,
     width: tileSize,
     height: 2 * tileSize
+}
+const musicToggleButton = {
+    name: "Music Toggle Button",
+    x: 16 * tileSize,
+    y: tileSize,
+    width: tileSize,
+    height: tileSize
 }
 const plant = {
     x: 14 * tileSize,
