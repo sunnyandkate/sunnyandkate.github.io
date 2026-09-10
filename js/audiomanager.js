@@ -1,6 +1,6 @@
 // BGM: "Paradise Found" Kevin MacLeod (incompetech.com)
 // Licensed under Creative Commons: By Attribution 4.0 License
-bgMusic = new Audio('audio/Paradise_Found.mp3');
+bgMusic = new Audio('/audio/Paradise_Found.mp3');
 
 bgMusic.loop = true;
 
