@@ -1,7 +1,7 @@
 const playBtn = document.querySelector(".play-btn");
 const volumeSlider = document.getElementById('volumeSlider');
 
-bgMusic.volume = baseVolume;
+bgMusic.volume = parseFloat(baseVolume);
 
 playBtn.textContent = isPlaying ? "Pause" : "Play";
 
@@ -21,7 +21,7 @@ playBtn.addEventListener('click', () => {
     }
 });
 
-volumeSlider.value = baseVolume;
+volumeSlider.value = parseFloat(baseVolume);
 volumeSlider.addEventListener('input', (e) => {
     bgMusic.volume = e.target.value;
     sessionStorage.setItem('musicVolume', e.target.value);
