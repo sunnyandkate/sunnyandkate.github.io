@@ -8,7 +8,9 @@ let savedTime = sessionStorage.getItem('musicTime');
 let isPlaying = sessionStorage.getItem('musicPlaying') === 'true';
 let baseVolume = sessionStorage.getItem('musicVolume') || 0.4;
 
+baseVolume = sessionStorage.getItem('musicVolume') !== null ? sessionStorage.getItem('musicVolume') : 0.15; 
 bgMusic.volume = parseFloat(baseVolume);
+
 
 if(savedTime){
     bgMusic.currentTime = parseFloat(savedTime);
