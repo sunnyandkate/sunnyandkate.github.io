@@ -6,7 +6,7 @@ bgMusic.loop = true;
 
 let savedTime = sessionStorage.getItem('musicTime');
 let isPlaying = sessionStorage.getItem('musicPlaying') === 'true';
-let baseVolume = sessionStorage.getItem('musicVolume') || 0.5;
+let baseVolume = sessionStorage.getItem('musicVolume') || 0.4;
 
 bgMusic.volume = baseVolume;
 

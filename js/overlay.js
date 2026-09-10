@@ -26,7 +26,7 @@ function startFadingOverlay() {
 }
 
 
-function drawPlayerSpotlightOverlay(ctx, player) {console.log("show");
+function drawPlayerSpotlightOverlay(ctx, player) {
     if (overlayAlpha <= 0) return; 
     ctx.save();
 
