@@ -52,5 +52,5 @@ Music:
 Paradise Found by Kevin MacLeod 
 (<a href="https://incompetech.com" target="_blank" rel="noopener">incompetech.com</a>)<br>
 Licensed under Creative Commons: By Attribution 4.0<br>
-<a href="http://creativecommons.org" target="_blank" rel="noopener">http://creativecommons.org</a>
+<a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">http://creativecommons.org/licenses/by/4.0/</a>
         
