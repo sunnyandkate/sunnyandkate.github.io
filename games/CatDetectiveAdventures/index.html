@@ -7,7 +7,10 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body>
+  <body style="margin: 0; padding: 0; min-height: 100vh; display: flex; flex-direction: column; background-color: #fffcb3; color: #707b51;">
+
+ <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px 0;">
+ 
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=540></canvas>
       <div id="unity-loading-bar">
@@ -22,6 +25,14 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">GameJam</div>
       </div>
+    </div>
+  </div>
+    <div class="footer" style="text-align: center; padding: 20px 0; font-family: monospace; font-size: 13px;">
+      <a href="https://sunnyandkate.github.io/legal.html" target="_blank" rel="noopener noreferrer" style="color: #707b51; text-decoration: underline;">legal details</a> 
+      <span style="color: #707b51;">| </span>
+      <a href="https://sunnyandkate.github.io/privacypolicy.html" target="_blank" rel="noopener noreferrer" style="color: #707b51; text-decoration: underline;">privacy policy</a> 
+      <span style="color: #707b51;">| </span>
+      <a href="https://sunnyandkate.github.io/credits.html" target="_blank" rel="noopener noreferrer" style="color: #707b51; text-decoration: underline;">credits</a>
     </div>
     <script>
       var container = document.querySelector("#unity-container");
