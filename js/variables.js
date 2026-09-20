@@ -26,6 +26,8 @@ const catNPCImg = new Image();
 const bunnyNPCImg = new Image();
 const wizardNPCImg = new Image();
 const infoNPCImg = new Image();
+const bugImageLeft = new Image();
+const bugImageRight = new Image();
 const gamesHouseImg = new Image();
 const javaHouseImg = new Image();
 const webdevHouseImg = new Image();
@@ -36,12 +38,15 @@ const musicBoxImg = new Image();
 const backgroundimage = new Image();
 
 
+
 //playerIdle.src =  'images/player.png';
 playerIdle.src =  playerIdleArray[3];
 catNPCImg.src = 'images/npcCat.png';
 bunnyNPCImg.src = 'images/bunny.png';
 wizardNPCImg.src = 'images/wizard.png';
 infoNPCImg.src = 'images/infoNPC.png';
+bugImageLeft.src = "images/bugLeft.png";
+bugImageRight.src = "images/bugRight.png";
 backgroundimage.src = 'images/backgroundImage.png';
 gamesHouseImg.src = 'images/gamesHut.png';
 javaHouseImg.src = 'images/javaHut.png';
@@ -50,6 +55,9 @@ infoHouseImg.src = 'images/infostand.png';
 phoneBoothImg.src ='images/phoneBoothImg.png';
 musicBoxImg.src = 'images/musicBox.png';
 mailboxImg.src = 'images/mailboxImg.png';
+
+let activeBugImg =  bugImageRight;
+
 
 //PLAYER
 let player = {
@@ -151,6 +159,34 @@ const mailbox = {
     y:  4 * tileSize,
     width: tileSize,
     height: tileSize
+};
+const bug = {
+    name: "bug",
+    x: 8 * tileSize,
+    y:  tileSize,
+    width: tileSize + 4,
+    height: 9,
+    speedX: 0.3, 
+    lastSpeedX: 0.3,
+    minX: 2 * tileSize,  
+    maxX: 6 * tileSize, 
+    update: function() {
+        if(this.speedX !== 0){
+            this.x += this.speedX;
+
+            this.lastSpeedX = this.speedX;
+
+            if (this.x >= this.maxX) {
+                this.x = this.maxX; 
+                this.speedX *= -1;  
+                activeBugImg = bugImageLeft;
+            } else if (this.x <= this.minX) {
+                this.x = this.minX;
+                this.speedX *= -1;  
+                activeBugImg = bugImageRight;
+            }
+        }       
+    }
 };
 
 

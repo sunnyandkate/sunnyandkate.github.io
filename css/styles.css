@@ -146,7 +146,6 @@ canvas{
     justify-content: space-between;
     align-items: flex-start;
     min-height: 0;
-
 }
 
 .dialogContent, .arcadeInfoContent, .webDevInfoContent, .javaHutInfoContent, .infoStandContent{
@@ -162,7 +161,7 @@ canvas{
   /*  position: relative;
     flex-direction: row;*/
 }
-.dialogButtons, .arcadeButtons{
+.dialogButtons, .arcadeButtons, .bugButtons{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -173,7 +172,7 @@ canvas{
     gap: 1rem;
   
 }
-.dialogButtons button, .nextBtn, .playGame, .dontplayGame, .arcadeButtons button, .websiteBtn, .codeBtn{
+.dialogButtons button, .nextBtn, .playGame, .dontplayGame, .arcadeButtons button, .websiteBtn, .codeBtn, .bugButtons button{
     font-family: "Pixelfont";
     font-size: 0.6rem;
     color: #707b51;
@@ -189,11 +188,19 @@ canvas{
     line-height: 1;
     cursor: pointer;
 }
-.dialogButtons button:hover, .playGame:hover, .dontplayGame:hover, .arcadeButtons button:hover, .websiteBtn:hover, .codeBtn:hover{
+.dialogButtons button:hover, .playGame:hover, .dontplayGame:hover, .arcadeButtons button:hover, .websiteBtn:hover, .codeBtn:hover,
+.bugButtons button:hover{
     color: #fffcb3;
     background-color: #707b51;
     border: 2px solid #fffcb3;
     box-shadow:2px 2px 2px #fffcb3;
+}
+.bugButtons button a{
+    text-decoration: none;
+    color: #707b51;
+}
+.bugButtons button a:hover{
+    color: #fffcb3;
 }
 .nextBtn{
     align-self: auto;
@@ -312,7 +319,8 @@ canvas{
   font-size: .8rem;
 }
 
-.toggleBtn, .closeDialogBtn, .closeArcadeInfoBtn, .closeWebDevInfoBtn, .closeJavaHutInfoBtn, .closeInfoStandBtn, .closeConsoleBtn
+.toggleBtn, .closeDialogBtn, .closeArcadeInfoBtn, .closeWebDevInfoBtn, .closeJavaHutInfoBtn, .closeInfoStandBtn, .closeConsoleBtn, 
+.closeBugModal
 { 
   color: #fffcb3;
   background-color: #707b51;
@@ -335,7 +343,7 @@ canvas{
 }
 .toggleBtn:hover, .closeModal:hover, .closeDialogBtn:hover, .closeArcadeInfoBtn:hover, 
 .closeWebDevInfoBtn:hover, .closeJavaHutInfoBtn:hover, .closeConsoleBtn:hover, .closeInfoStandBtn:hover,
-.close-audio-btn:hover{
+.close-audio-btn:hover, .closeBugModal:hover{
   border: 1px solid #707b51;
   color: #707b51;
   background-color: #fffcb3;
@@ -371,7 +379,7 @@ canvas{
     display:none;
 }
 /*mailbox modal*/
-.mailboxModal, .gameConfirmModal, .projectModal, .mobileGamesConsoleContainer, .audio-modal{
+.mailboxModal, .gameConfirmModal, .projectModal, .mobileGamesConsoleContainer, .audio-modal, .bugModal{
     font-family: "Pixelfont";
     font-size:1rem;
     text-transform: uppercase;   
@@ -471,7 +479,7 @@ canvas{
 .mailboxModal p, .projectModal p{
     margin-bottom: 2rem;
 }
-.mailboxModal.open{
+.mailboxModal.open, .bugModal.open{
     display: flex;
 }
 .modalResume, .play-btn{
@@ -537,7 +545,7 @@ canvas{
     margin-top: auto;
     width: 100%;
 }
-.closeModal, .closeMailbox, .closeModalBtn, .close-audio-btn{
+.closeModal, .closeMailbox, .closeModalBtn, .close-audio-btn, .closeBugModal{
   color: #fffcb3;
   background-color: #707b51;
   border: 1px solid #707b51;
@@ -1057,11 +1065,11 @@ footer a{
         display: inline-block;
         margin-bottom: 0;
     }
-    .dialogButtons, .arcadeButtons{
+    .dialogButtons, .arcadeButtons, .bugButtons{
         display: inline-block;
         margin: 0;
     }
-    .dialogButtons button, .arcadeButtons button{
+    .dialogButtons button, .arcadeButtons button, .bugButtons button{
         margin: 0;
     }
     .connect-buttons a{
@@ -1119,7 +1127,7 @@ footer a{
         font-size: .5rem;
         padding: .3rem;
     }
-    .closeMailbox, .close-audio-btn{
+    .closeMailbox, .close-audio-btn, .closeBugModal{
         padding: .3rem;
     }
     .resumeBtnGame{
@@ -1195,7 +1203,7 @@ footer a{
     .dialogContent{
         margin: 1rem;
     }
-    .dialogButtons button, .nextBtn{
+    .dialogButtons button, .nextBtn, .bugButtons button{
         padding: .3rem;
         font-size: .6rem;
     }
@@ -1244,7 +1252,7 @@ footer a{
         right: 4%;   
         gap: 0.5rem; 
     }
-    .dialogButtons button{
+    .dialogButtons button, .bugButtons button{
         padding: .6rem;
     }
 }
@@ -1259,14 +1267,14 @@ footer a{
         font-size: .8rem;
         padding-right: 0;       
     }
-    .dialogButtons{
+    .dialogButtons, .bugButtons{
       margin-right: 1.5rem;
     }
-    .dialogButtons button, .nextBtn{
+    .dialogButtons button, .nextBtn, .bugButtons button{
         padding: .3rem;
         font-size: .6rem;
     }
-    .dialogButtons button{
+    .dialogButtons button, .bugButtons button{
         padding: .4rem;      
     }
     .resumeBtnGame{

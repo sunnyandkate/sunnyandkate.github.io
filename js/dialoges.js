@@ -12,6 +12,12 @@ const closeModal = document.querySelector(".closeModal");
 const mailboxModal = document.querySelector(".mailboxModal");
 const closeMailbox = document.querySelector(".closeMailbox");
 
+//BUGMODAL
+const bugModal = document.querySelector(".bugModal");
+const closeBugModalBtn = document.querySelector(".closeBugModal");
+const bugButtons = document.querySelector(".butButtons");
+const closeBugBtn = document.querySelector(".closeBugBtn");
+
 //NAVIGATION INFO BOX
 let toggleBtn = document.querySelector(".toggleBtn");
 let showInfo = document.querySelector(".showInfo");

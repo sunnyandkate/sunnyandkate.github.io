@@ -138,6 +138,42 @@ function closeMailboxModal(){
     houseClick = false;
     mailboxModal.classList.remove("open");
 }
+/*bug modal*/
+function enterBugByClicking(clickX, clickY, house, nextPlayerX, nextPlayerY){
+     if (
+        clickX >= house.x &&
+        clickX <= house.x + house.width &&
+        clickY >= house.y &&
+        clickY <= house.y + house.height
+    ){
+        //move player in front of the bug
+        bug.speedX = 0;
+        player.x = nextPlayerX;
+        player.y = nextPlayerY;
+        houseClick = true;   
+        if (!bugModal.classList.contains('open')) {
+            bugModal.classList.add('open');
+        }
+    }
+}
+function openBugModal(){
+    if (!bugModal.classList.contains('open')) {
+            bugModal.classList.add('open');
+        }
+    
+}
+closeBugModalBtn.addEventListener("click", closeBugModal);
+closeBugBtn.addEventListener("click", closeBugModal);
+
+function closeBugModal(){
+    nextPlayerX = bug.x + bug.width + 4;
+    nextPlayerY = bug.y;
+    //move player in front of the bug
+    player.x = nextPlayerX;
+    player.y = nextPlayerY;
+    houseClick = false;
+    bugModal.classList.remove("open");
+}
 /*musicbox*/
 function enterMusicBoxByClicking(clickX, clickY, house, nextPlayerX, nextPlayerY){
      if (
@@ -216,6 +252,8 @@ function closeAllDialoges(){
     mailboxModal.classList.remove("open");
     phoneModal.classList.remove("open");
     audioModal.style.display = 'none';
+    bugModal.classList.remove("open");
+    checkForBugCollision();
 }
 
 

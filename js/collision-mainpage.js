@@ -13,6 +13,7 @@ function collisionWithHousesandNPC(){
     changeDialogText(player, phoneBooth, "#", false, "phoneBooth");
     changeDialogText(player, mailbox, "#", false, "mailboxText");
     changeDialogText(player, musicBox, "#", false, "musicBox");
+    changeDialogText(player, bug, '#', false, "bug");
 
     checkInfoStandCollision(player, infoHouse, infoNPC.x, infoNPC.y + infoNPC.height);
 }
@@ -29,6 +30,7 @@ canvas.addEventListener("click", function(e){
     enterInfoStandByClicking(clickX, clickY, infoHouse, infoNPC.x, infoNPC.y + infoNPC.height + tileSize);
     enterMailboxByClicking(clickX, clickY, mailbox, mailbox.x, mailbox.y + mailbox.height);
     enterMusicBoxByClicking(clickX, clickY, musicBox, musicBox.x, musicBox.y + musicBox.height);
+    enterBugByClicking(clickX, clickY, bug, bug.x, bug.y);
 });
 function changeDialogText(player, object, page, value, dialogText){
     objectCollision(player, object, page, value, dialogText);
@@ -76,6 +78,13 @@ function changeDialogText(player, object, page, value, dialogText){
                 dialogButtons.style.display = "none";
                 nextBtn.style.display = "none";
                 currentCollision = "musicBox";
+                break;
+            case "bug":
+                openBugModal();
+                dialogButtons.style.display = "none";
+                nextBtn.style.display = "none";
+                currentCollision = "bug";
+                bug.speedX = 0;
                 break;
             case "gameHut":
                 dialogContent.textContent = "Do you want to enter The Game Arcade";
@@ -154,5 +163,11 @@ function checkInfoStandCollision(player, object, nextPlayerX, nextPlayerY){
                 closeInfoStandDialog();
             }
            infoStand.style.display = "block";
+        }
+}
+
+function checkForBugCollision(){  
+        if(bug.speedX === 0){
+            bug.speedX = bug.lastSpeedX;
         }
 }

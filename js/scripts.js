@@ -37,6 +37,7 @@ function update(){
     setupInput();   
     checkCollisionWithAnyObject();
     collisionWithHousesandNPC();     
+    bug.update();   
 }
 
 function draw(){
@@ -49,12 +50,13 @@ function draw(){
     ctx.drawImage(phoneBoothImg, phoneBooth.x, phoneBooth.y, phoneBooth.width, phoneBooth.height);
     ctx.drawImage(mailboxImg, mailbox.x, mailbox.y, mailbox.width, mailbox.height);
     ctx.drawImage(musicBoxImg, musicBox.x, musicBox.y, musicBox.width, musicBox.height);
+    ctx.drawImage(activeBugImg, bug.x, bug.y, bug.width, bug.height);
     ctx.drawImage(infoNPCImg, infoNPC.x, infoNPC.y, infoNPC.width, infoNPC.height);
     ctx.drawImage(infoHouseImg, infoHouse.x, infoHouse.y, infoHouse.width, infoHouse.height);
     ctx.drawImage(catNPCImg, catNPC.x, catNPC.y, catNPC.width, catNPC.height);
     ctx.drawImage(bunnyNPCImg, bunnyNPC.x, bunnyNPC.y, bunnyNPC.width, bunnyNPC.height);
     ctx.drawImage(wizardNPCImg, wizardNPC.x, wizardNPC.y, wizardNPC.width, wizardNPC.height);
-   
+    
     ctx.drawImage(playerIdle, Math.round(player.x), Math.round(player.y), player.width, player.height);
    if (!showStartOverlay) {
         drawPlayerSpotlightOverlay(ctx, player);
