@@ -24,8 +24,8 @@ function drawWebDevHutInterior(ctx){
     ctx.drawImage(webDevHutBackgroundImg, 0, 0, canvas.width, canvas.height);
     ctx.drawImage(webDevHutGuideImg, webDevHutGuide.x, webDevHutGuide.y, webDevHutGuide.width, webDevHutGuide.height);
     ctx.drawImage(invitationCardImg, invitationCard.x, invitationCard.y, invitationCard.width, invitationCard.height);
-   // ctx.drawImage(websiteTwoImg, websiteTwo.x, websiteTwo.y, websiteTwo.width, websiteTwo.height);
-    ctx.drawImage(nextWebsiteProjectImg, nextWebsiteProject.x, nextWebsiteProject.y, nextWebsiteProject.width, nextWebsiteProject.height);
+    ctx.drawImage(janinesWebsiteImg, janinesWebsite.x, janinesWebsite.y, janinesWebsite.width, janinesWebsite.height);
+  //  ctx.drawImage(nextWebsiteProjectImg, nextWebsiteProject.x, nextWebsiteProject.y, nextWebsiteProject.width, nextWebsiteProject.height);
     ctx.drawImage(cmsProjectImg, cmsProject.x, cmsProject.y, cmsProject.width, cmsProject.height);
     ctx.drawImage(fortuneCookieImg, fortuneCookie.x, fortuneCookie.y, fortuneCookie.width, fortuneCookie.height);
     ctx.drawImage(musicToggleButtonImg, musicToggleButton.x, musicToggleButton.y, musicToggleButton.width, musicToggleButton.height);

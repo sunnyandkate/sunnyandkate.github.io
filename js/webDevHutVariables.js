@@ -1,7 +1,7 @@
 const webDevHutBackgroundImg = new Image();
 const webDevHutGuideImg = new Image();
 const invitationCardImg = new Image();
-const websiteTwoImg = new Image();
+const janinesWebsiteImg = new Image();
 const nextWebsiteProjectImg = new Image();
 const cmsProjectImg = new Image();
 const fortuneCookieImg = new Image();
@@ -13,7 +13,7 @@ const houseWindowTwoImg = new Image();
 webDevHutBackgroundImg.src = "images/webDevHouse.png";
 webDevHutGuideImg.src = "images/webDevGuide.png";
 invitationCardImg.src = "images/desk.png";
-websiteTwoImg.src = "images/desk.png";
+janinesWebsiteImg.src = "images/desk.png";
 nextWebsiteProjectImg.src = "images/nextWebsiteProjectImg.png";
 cmsProjectImg.src = "images/cmsProject.png";
 fortuneCookieImg.src = "images/fortuneCookieImg.png";
@@ -44,17 +44,17 @@ const invitationCard = {
     height: tileSize
 }
 
-const websiteTwo = {
-    name: "Website Two",
-    x: tileSize,
-    y: tileSize,
+const janinesWebsite = {
+    name: "website from Janine",
+    x: 5 * tileSize,
+    y: 6 * tileSize,
     width: 2 * tileSize,
     height: tileSize
 }
 const nextWebsiteProject = {
     name: "Next Project",
-    x: 5 * tileSize,
-    y: 6 * tileSize,
+    x: tileSize,
+    y: tileSize,
     width: 2 * tileSize,
     height: tileSize
 }

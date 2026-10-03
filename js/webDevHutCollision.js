@@ -7,7 +7,7 @@ function webDevHutCollision(){
     checkWebDevHutExit();
     changeDialogText(player, cmsProject, "https://sunnyandkate.byethost11.com/cms/index.php", "https://github.com/sunnyandkate/cms", true, "cmsProject");
     changeDialogText(player, invitationCard, "https://sunnyandkate.byethost11.com/InvitationCard/", "https://github.com/sunnyandkate/InvitationCard", true, "invitationCard");
-    changeDialogText(player, websiteTwo, "#", "#", true, "websiteTwo");
+    changeDialogText(player, janinesWebsite, "https://janine-heuer-psychotherapie.de", "https://github.com/sunnyandkate", true, "janinesWebsite");
     changeDialogText(player, nextWebsiteProject, "#", "#", true, "nextWebsiteProject");
     changeDialogText(player, fortuneCookie, "#", "#", true, "fortuneCookie");
     checkInfoStandCollision(player, webDevHutGuide);
@@ -20,7 +20,7 @@ canvas.addEventListener("click", function(e){
 
     enterWebProjectByClicking(clickX, clickY, cmsProject, "see", "https://sunnyandkate.byethost11.com/cms/index.php", "https://github.com/sunnyandkate/cms"); 
     enterWebProjectByClicking(clickX, clickY, invitationCard, "see", "https://sunnyandkate.byethost11.com/InvitationCard/", "https://github.com/sunnyandkate/InvitationCard"); 
-    enterWebProjectByClicking(clickX, clickY, websiteTwo, "see", "#", "#"); 
+    enterWebProjectByClicking(clickX, clickY, janinesWebsite, "see", "https://janine-heuer-psychotherapie.de", "https://github.com/sunnyandkate"); 
     enterNextWebProjectByClicking(clickX, clickY, nextWebsiteProject, "#", "#"); 
     showFortuneCookieByClicking(clickX, clickY, fortuneCookie, "open");
     enterInfoStandByClicking(clickX, clickY, webDevHutGuide);
@@ -80,21 +80,21 @@ function changeDialogText(player, object, page, sourceCode, value, dialogText){
                     dialogBox.style.display = "none";
                 };                   
                 break;
-             case "websiteTwo":
+             case "janinesWebsite":
                 selectedProject = page;
                 selectedSourceCode = sourceCode;
-                dialogContent.innerHTML = "<strong>WebsiteTwo:</strong>  Coming Soon";
+                dialogContent.innerHTML = "<strong>Janine's Website:</strong>  Check out Janine's Website";
                 dialogButtons.style.display = "flex";
                 nextPlayerX = websiteTwo.x;
                 nextPlayerY = websiteTwo.y + websiteTwo.height;
-/*
+
                 goInsideBtn.onclick = function(){                    
                     openProjectModal();
                 };
                 stayOutsideBtn.onclick = function(){
                     player.y += 10;
                     dialogBox.style.display = "none";
-                };         */          
+                };                   
                 break;
             case "fortuneCookie":
                 nextPlayerX = fortuneCookie.x;
