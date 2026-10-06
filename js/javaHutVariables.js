@@ -4,6 +4,7 @@ const slotMachineImg = new Image();
 const calculatorImg = new Image();
 const textEditorImg = new Image();
 const inventoryImg = new Image();
+const presentImg = new Image();
 const javaCertificateImg = new Image();
 const musicToggleButtonImg = new Image();
 const plantImg = new Image();
@@ -14,6 +15,7 @@ slotMachineImg.src = "images/slotmachine.png";
 calculatorImg.src = "images/calculatorImg.png";
 textEditorImg.src = "images/textEditorImg.png";
 inventoryImg.src = "images/inventoryImg.png";
+presentImg.src = "images/present.png";
 javaCertificateImg.src = "images/javaCertificateImg.png";
 musicToggleButtonImg.src = "images/musicToggleButtonImg.png";
 plantImg.src = "images/plant.png";
@@ -53,6 +55,13 @@ const inventory = {
     width: tileSize,
     height: tileSize
 }
+const present = {
+    name: "Present",
+    x: 13 * tileSize,
+    y: 4 * tileSize,
+    width: tileSize,
+    height: tileSize
+}
 const javaCertificate = {
     name: "JavaCertificate",
     x: 12 * tileSize,
@@ -85,7 +94,7 @@ const mapGrid = [
         [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1],
         [1, 1, 1, 2, 0, 0, 2, 0, 0, 2, 0, 0, 0, 0, 0, 2, 2, 1, 1, 1],
         [1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 1, 1],
-        [1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1],
+        [1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 1, 1, 1],
         [1, 1, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 1, 1],
         [1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 2, 1, 1, 1],
         [1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 1, 1, 1],

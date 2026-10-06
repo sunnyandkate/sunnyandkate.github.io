@@ -11,6 +11,7 @@ function javaHutCollision(){
     changeDialogText(player, calculator, "../games/JavaProjects/Calculator.jar", "https://github.com/sunnyandkate/Calculator", true, "calculator");
     changeDialogText(player, textEditor, "../games/JavaProjects/TextEditor.jar", "https://github.com/sunnyandkate/TextEditor", true, "textEditor");
     changeDialogText(player, inventory, "https://game-inventory-explorer.vercel.app", "https://github.com/sunnyandkate/game-inventory-explorer", true, "inventory");
+    changeDialogText(player, present, "https://birthday-calendar-frontend.vercel.app", "https://github.com/sunnyandkate/calendar", true, "present");
     changeDialogText(player, javaCertificate, "javaCertificate.html", "#", false, "javaCertificate");
     checkInfoStandCollision(player, javaHutGuide);
 }
@@ -23,6 +24,7 @@ canvas.addEventListener("click", function(e){
     enterJavaProjectByClicking(clickX, clickY, calculator, "see", "download the jar file", "../games/JavaProjects/Calculator.jar", "https://github.com/sunnyandkate/Calculator"); 
     enterJavaProjectByClicking(clickX, clickY, textEditor, "see", "download the jar file", "../games/JavaProjects/TextEditor.jar", "https://github.com/sunnyandkate/TextEditor"); 
     enterJavaProjectByClicking(clickX, clickY, inventory, "see", "visit the website", "https://game-inventory-explorer.vercel.app", "https://github.com/sunnyandkate/game-inventory-explorer");
+    enterJavaProjectByClicking(clickX, clickY, present, "open", "visitWesite", "https://birthday-calendar-frontend.vercel.app", "https://github.com/sunnyandkate/calendar");
     showJavaCertificateByClicking(clickX, clickY, javaCertificate);   
     enterInfoStandByClicking(clickX, clickY, javaHutGuide);
     enterMusicToggleButtonByClicking(clickX, clickY, musicToggleButton);
@@ -94,6 +96,24 @@ function changeDialogText(player, object, page, sourceCode, value, dialogText){
                 selectedSourceCode = sourceCode;
                 ctaText = "visit the website";
                 dialogContent.innerHTML = "<strong>Game Inventory Explorer:</strong>  Do you want to have a look at this Project?";
+                dialogButtons.style.display = "flex";
+               
+                nextPlayerX = inventory.x;
+                nextPlayerY = inventory.y + inventory.height ;
+ 
+                goInsideBtn.onclick = function(){                    
+                    openProjectModal();
+                };
+                stayOutsideBtn.onclick = function(){
+                    player.y += 10;
+                    dialogBox.style.display = "none";
+                };      
+                break;
+            case "present":
+                selectedProject = page;
+                selectedSourceCode = sourceCode;
+                ctaText = "visit the website";
+                dialogContent.innerHTML = "<strong>Birthday Countdown:</strong>  Do you want open the Present?";
                 dialogButtons.style.display = "flex";
                
                 nextPlayerX = inventory.x;
