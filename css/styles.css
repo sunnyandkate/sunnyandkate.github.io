@@ -1044,46 +1044,35 @@ footer a{
         margin-top: 3rem;
     } 
 }
-@media(hover: none) and (pointer: coarse){
-    .touch-buttons{
-        display: grid;
+
+@media (max-width: 1200px){
+    .box-container{
+       column-gap: 0;
+    }
+    .dialogContent, .arcadeInfoContent{
+        line-height: 1;
+    }
+    .welcome{
+        padding: .5rem;
+    }
+    .welcome-info{
+        font-size: .8rem;
+    }
+    .showInfo{
+        padding: .4rem;
+    }
+    .mobile-controls-container{
+        bottom: 10%; 
+        right: 4%;   
+        gap: 0.5rem; 
+    }
+    .dialogButtons button, .bugButtons button{
+        padding: .6rem;
     }
 }
 @media(orientation: landscape){
     .connect-icons{
         margin-bottom:0;
-    }  
-}
-@media (max-width: 667px) and (orientation: landscape) {
-    .about-content{
-        padding: 0;
-        margin: 0;
-    }
-    .dialogBox, .welcome, .arcadeInfoBox{
-        padding: .5rem;
-    }
-    .dialogContent, .arcadeInfoContent{
-        display: inline-block;
-        margin-bottom: 0;
-    }
-    .dialogButtons, .arcadeButtons, .bugButtons{
-        display: inline-block;
-        margin: 0;
-    }
-    .dialogButtons button, .arcadeButtons button, .bugButtons button{
-        margin: 0;
-    }
-    .connect-buttons a{
-        padding: .3rem;
-    }
-    .phoneModal .npc{
-        margin-bottom:0;
-    }
-    .closeModal{
-        padding: .3rem;
-    }
-    .navigationInfo h3{
-        font-size: .6rem;
     }  
 }
 
@@ -1233,31 +1222,48 @@ footer a{
         margin-right: 1rem;
     }
 }
-@media (max-width: 1200px){
-    .box-container{
-       column-gap: 0;
+
+@media (max-width: 667px) and (orientation: landscape) {
+    .about-content{
+        padding: 0;
+        margin: 0;
     }
-    .dialogContent, .arcadeInfoContent{
-        line-height: 1;
-    }
-    .welcome{
+    .dialogBox, .welcome, .arcadeInfoBox{
         padding: .5rem;
     }
-    .welcome-info{
-        font-size: .8rem;
+    .dialogContent, .arcadeInfoContent{
+        display: inline-block;
+        margin-bottom: 0;
     }
-    .showInfo{
-        padding: .4rem;
+    .dialogButtons, .arcadeButtons, .bugButtons{
+        display: inline-block;
+        margin: 0;
     }
-    .mobile-controls-container{
-        bottom: 10%; 
-        right: 4%;   
-        gap: 0.5rem; 
+    .dialogButtons button, .arcadeButtons button, .bugButtons button{
+        margin: 0;
     }
-    .dialogButtons button, .bugButtons button{
-        padding: .6rem;
+    .connect-buttons a{
+        padding: .3rem;
     }
+    .phoneModal .npc{
+        margin-bottom:0;
+    }
+    .closeModal{
+        padding: .3rem;
+    }
+    .navigationInfo h3{
+        font-size: .6rem;
+    }  
 }
+
+@media screen 
+  and (max-device-height: 360px) 
+  and (orientation: landscape) { 
+    .dialogContent{
+        font-size: .6rem;
+    }
+
+  }
 @media (max-height: 600px){
     .dialogBox, .webDevInfoBox{
         padding: .5rem;
@@ -1324,6 +1330,12 @@ footer a{
         font-size: .6rem;
     }
 
+}
+
+@media(hover: none) and (pointer: coarse){
+    .touch-buttons{
+        display: grid;
+    }
 }
 
 .fade-screen{

@@ -11,7 +11,7 @@ function javaHutCollision(){
     changeDialogText(player, calculator, "../games/JavaProjects/Calculator.jar", "https://github.com/sunnyandkate/Calculator", true, "calculator");
     changeDialogText(player, textEditor, "../games/JavaProjects/TextEditor.jar", "https://github.com/sunnyandkate/TextEditor", true, "textEditor");
     changeDialogText(player, inventory, "https://game-inventory-explorer.vercel.app", "https://github.com/sunnyandkate/game-inventory-explorer", true, "inventory");
-    changeDialogText(player, present, "https://birthday-calendar-frontend.vercel.app", "https://github.com/sunnyandkate/calendar", true, "present");
+    changeDialogText(player, present, "https://halloween-birthday-calendar.vercel.app", "https://github.com/sunnyandkate/calendar", true, "present");
     changeDialogText(player, javaCertificate, "javaCertificate.html", "#", false, "javaCertificate");
     checkInfoStandCollision(player, javaHutGuide);
 }
@@ -24,7 +24,7 @@ canvas.addEventListener("click", function(e){
     enterJavaProjectByClicking(clickX, clickY, calculator, "see", "download the jar file", "../games/JavaProjects/Calculator.jar", "https://github.com/sunnyandkate/Calculator"); 
     enterJavaProjectByClicking(clickX, clickY, textEditor, "see", "download the jar file", "../games/JavaProjects/TextEditor.jar", "https://github.com/sunnyandkate/TextEditor"); 
     enterJavaProjectByClicking(clickX, clickY, inventory, "see", "visit the website", "https://game-inventory-explorer.vercel.app", "https://github.com/sunnyandkate/game-inventory-explorer");
-    enterJavaProjectByClicking(clickX, clickY, present, "open", "visitWesite", "https://birthday-calendar-frontend.vercel.app", "https://github.com/sunnyandkate/calendar");
+    enterJavaProjectByClicking(clickX, clickY, present, "open", "visit the Wesite", "https://halloween-birthday-calendar.vercel.app", "https://github.com/sunnyandkate/calendar");
     showJavaCertificateByClicking(clickX, clickY, javaCertificate);   
     enterInfoStandByClicking(clickX, clickY, javaHutGuide);
     enterMusicToggleButtonByClicking(clickX, clickY, musicToggleButton);
