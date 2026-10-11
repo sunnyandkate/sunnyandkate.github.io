@@ -17,7 +17,7 @@ html {
     html {
         /* If an aggressive phone engine forces the page dark, 
            this filter instantly flips the color mathematics back to normal! */
-        filter: invert(0) hue-rotate(0deg) !important;
+        filter: invert(1) hue-rotate(180deg) !important;
     }
 }
 body{
