@@ -42,7 +42,7 @@
 /** Dark color-scheme **/
 .c_darkmode{
     --cc-bg: #fff;
-    --cc-text: #d8e5ea;
+   /* --cc-text: #d8e5ea;*/
     --cc-text: yellow;
     --cc-btn-primary-bg: #a6c4dd;
     --cc-btn-primary-text: #000;
