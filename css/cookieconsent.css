@@ -41,8 +41,9 @@
 
 /** Dark color-scheme **/
 .c_darkmode{
-    --cc-bg: #181b1d;
+    --cc-bg: #fff;
     --cc-text: #d8e5ea;
+    --cc-text: yellow;
     --cc-btn-primary-bg: #a6c4dd;
     --cc-btn-primary-text: #000;
     --cc-btn-primary-hover-bg: #c2dff7;
