@@ -10,7 +10,9 @@
     font-family: "PixelfontOld";
     src: url('../fonts/PixelfontOld.ttf');
 }
-
+html {
+    color-scheme: only light !important;
+}
 body{
     height:100%;
     width: 100%;
