@@ -41,7 +41,7 @@
 
 /** Dark color-scheme **/
 @media(prefers-color-scheme: dark){
-:root{
+#cc-main{
     --cc-bg: #fff;
    /* --cc-text: #d8e5ea;*/
     --cc-text: yellow;
