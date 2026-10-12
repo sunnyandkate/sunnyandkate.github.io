@@ -985,24 +985,6 @@ footer a{
     }  
 }
 
-/*cookies*/
-.unlimited-content---nb-simple{
-    left:0;
-    right:auto;
-}
-.cc-message{
-    color:#fffcb3;
-}
-.cc-link{
-    font-family:'Pixelfont', 'Helvetica';
-}
-.cc-color-override--167202574 .cc-btn{
-    color:#707b51 !important;
-    font-family:'Pixelfont', 'Helvetica';
-}
-.cc-window{
-    border-top:2px solid #707b51;
-}
 
 /*media queries*/
 @media(min-width: 600px){
