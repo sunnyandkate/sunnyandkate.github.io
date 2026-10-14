@@ -1244,7 +1244,53 @@ footer a{
     }
     .navigationInfo h3{
         font-size: .6rem;
-    }  
+    } 
+    .middle-top{
+       grid-column: 1/5;
+    }
+    .middle-bottom{
+        grid-row: 2/4;
+    }
+    .dialogContent{
+        font-size: .6rem;
+        margin: 0;
+    }
+    .mobileGamesConsoleContainer{
+        border: .1rem solid #707b51;
+        z-index: 22;
+        justify-content: center;
+    }
+    .mobileGameConsoleTop{
+        margin-bottom: .5rem;
+    }
+    .mobileGameConsoleTop .description{
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        font-size: .6rem;
+    } 
+     .mobileGameConsoleTop .topTitle{
+        font-size: .6rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+     }
+    .mobileGamesList{
+    margin: 0;
+    }
+    .download-section{
+    font-size: .6rem;
+    margin: 0;
+    }
+    .platform, .meta-format, .meta-size, .mobile-game-download{
+        font-size: .6rem;
+    }
+    .mobile-game-download{
+        width: 70%;
+    }
+    .closeConsoleBtn{
+        padding: 2px;
+    }
+   
 }
 
 @media screen 
@@ -1256,14 +1302,17 @@ footer a{
 
   }
 @media (max-height: 600px){
+    .mailboxModal .about-content, .phoneModal .about-content{
+        padding: 1rem;
+    }
     .dialogBox, .webDevInfoBox{
         padding: .5rem;
     }
     .dialogContent, .webDevInfoContent{
-        font-size: .8rem;
+        font-size: .6rem;
     }
     .dialogContent, .arcadeInfoContent, .javaHutInfoContent, .infoStandContent{
-        font-size: .8rem;
+        font-size: .6rem;
         padding-right: 0;       
     }
     .dialogButtons, .bugButtons{
@@ -1311,8 +1360,9 @@ footer a{
         width: 1.5rem;
     }
     .nextBtn{
-        right: 2rem;
-        bottom: 1rem;
+        right: .5rem;
+        bottom: .5rem;
+        width: 1.8rem;
     }  
    
 }
