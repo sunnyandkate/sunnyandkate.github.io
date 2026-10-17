@@ -5,8 +5,8 @@ let projectModal = document.querySelector(".projectModal");
 function webDevHutCollision(){
     collisionDetection();
     checkWebDevHutExit();
-    changeDialogText(player, cmsProject, "https://sunnyandkate.byethost11.com/cms/index.php", "https://github.com/sunnyandkate/cms", true, "cmsProject");
-    changeDialogText(player, invitationCard, "https://sunnyandkate.byethost11.com/InvitationCard/", "https://github.com/sunnyandkate/InvitationCard", true, "invitationCard");
+    changeDialogText(player, cmsProject, "https://projects/maharaniwebsites.com/cms/index.php", "https://github.com/sunnyandkate/cms", true, "cmsProject");
+    changeDialogText(player, invitationCard, "https://projects/maharaniwebsites.com/InvitationCard/index.php", "https://github.com/sunnyandkate/InvitationCard", true, "invitationCard");
     changeDialogText(player, janinesWebsite, "https://janine-heuer-psychotherapie.de", "https://github.com/sunnyandkate", true, "janinesWebsite");
     changeDialogText(player, nextWebsiteProject, "#", "#", true, "nextWebsiteProject");
     changeDialogText(player, fortuneCookie, "#", "#", true, "fortuneCookie");
@@ -18,8 +18,8 @@ function webDevHutCollision(){
 canvas.addEventListener("click", function(e){
    const { clickX, clickY } = getGameClickCoords(e);
 
-    enterWebProjectByClicking(clickX, clickY, cmsProject, "see", "https://sunnyandkate.byethost11.com/cms/index.php", "https://github.com/sunnyandkate/cms"); 
-    enterWebProjectByClicking(clickX, clickY, invitationCard, "see", "https://sunnyandkate.byethost11.com/InvitationCard/", "https://github.com/sunnyandkate/InvitationCard"); 
+    enterWebProjectByClicking(clickX, clickY, cmsProject, "see", "https://projects/maharaniwebsites.com/cms/index.php", "https://github.com/sunnyandkate/cms"); 
+    enterWebProjectByClicking(clickX, clickY, invitationCard, "see", "https://projects/maharaniwebsites.com/InvitationCard/index.php", "https://github.com/sunnyandkate/InvitationCard"); 
     enterWebProjectByClicking(clickX, clickY, janinesWebsite, "see", "https://janine-heuer-psychotherapie.de", "https://github.com/sunnyandkate"); 
     enterNextWebProjectByClicking(clickX, clickY, nextWebsiteProject, "#", "#"); 
     showFortuneCookieByClicking(clickX, clickY, fortuneCookie, "open");
